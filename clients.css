@@ -1,0 +1,68 @@
+/* Clients Section */
+.clients {
+    margin-top: 100px;
+    padding: 80px 6%;
+    background: #f9f9f9;
+}
+
+.clients h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #4db8ff;
+}
+
+.client-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.client {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.client:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.client-video iframe {
+    width: 100%;
+    height: 200px;
+}
+
+.client-content {
+    padding: 20px;
+}
+
+.client-content h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.client-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* YouTube Video Player Styles */
+iframe[title="YouTube video player"] {
+    display: block;
+    margin: 50px auto;
+    max-width: 100%;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .client-container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,203 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Professional Kitchen Equipment</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Company Logo">
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="home.html" class="nav-icon" data-tooltip="Home">
+                            <i class="fas fa-home"></i>
+                            <span class="nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="Products.html" class="nav-icon dropbtn" data-tooltip="Products">
+                            <i class="fas fa-box"></i>
+                            <span class="nav-text">Products</span>
+                            <i class="fas fa-chevron-down mobile-arrow"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="Products.html#cooking">Cooking Equipment</a>
+                            <a href="Products.html#refrigeration">Refrigeration</a>
+                            <a href="Products.html#preparation">Food Preparation</a>
+                            <a href="Products.html#washing">Washing Equipment</a>
+                            <a id="showAllProductsBtn">Show All Products</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="services.html" class="nav-icon" data-tooltip="Services">
+                            <i class="fas fa-cogs"></i>
+                            <span class="nav-text">Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="clients.html" class="nav-icon" data-tooltip="Clients">
+                            <i class="fas fa-users"></i>
+                            <span class="nav-text">Clients</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-icon" data-tooltip="About">
+                            <i class="fas fa-info-circle"></i>
+                            <span class="nav-text">About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-icon" data-tooltip="Contact">
+                            <i class="fas fa-envelope"></i>
+                            <span class="nav-text">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+    <!-- Company Intro Section -->
+    <section class="company-intro">
+        <div class="intro-container">
+            <div class="company-image">
+                <img src="https://www.gillisolutions.com/sites/default/files/Logo-gillisolutions_v3.png" alt="Gilli Solutions Building">
+            </div>
+            <div class="company-description">
+                <h2>Welcome to Gilli Solutions</h2>
+                <p class="established">Established 2013</p>
+                <p>Gilli Solutions has been at the forefront of kitchen equipment manufacturing for over a decade. Starting from humble beginnings, we have grown into a trusted name in the industry, serving clients across multiple sectors.</p>
+                <p>Our state-of-the-art manufacturing facility, spread across a vast area, is equipped with the latest technology and machinery. We take pride in our team of skilled professionals who ensure the highest quality standards in every product we deliver.</p>
+                <div class="quick-stats">
+                    <div class="stat">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>500+</span>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-users"></i>
+                        <span>100+</span>
+                        <p>Team Members</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-globe"></i>
+                        <span>10+</span>
+                        <p>Countries Served</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <!-- Vision & Mission -->
+            <div class="vm-container">
+                <div class="vision-box">
+                    <h2><i class="fas fa-eye"></i> Our Vision</h2>
+                    <p>To become the global market leader in the supply of high-quality industrial kitchen equipment and exhaust systems by:</p>
+                    <ul>
+                        <li>Increasing production capacity</li>
+                        <li>Widening our customer base</li>
+                        <li>Continuously upgrading our production facilities</li>
+                    </ul>
+                </div>
+                
+                <div class="mission-box">
+                    <h2><i class="fas fa-bullseye"></i> Our Mission</h2>
+                    <p>To exceed industry standards while delivering the exceptional service our customers deserve.</p>
+                </div>
+            </div>
+    
+            <!-- Company History -->
+            <div class="company-history">
+                <h2><i class="fas fa-building"></i> About Gilli Solutions</h2>
+                <p>Founded in 2013, Gilli Solutions has established itself as a leader in manufacturing complete Kitchen Fume Exhaust Systems & Fresh Air Systems. We pride ourselves on delivering products that provide the highest performance, efficiency, and value for money.</p>
+                
+                <div class="core-values">
+                    <h3>Our Core Values</h3>
+                    <ul>
+                        <li>Flawless product delivery</li>
+                        <li>Continuous innovation</li>
+                        <li>Technological advancement</li>
+                        <li>Superior quality standards</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Products Section -->
+            <div class="products-overview">
+                <h2><i class="fas fa-industry"></i> Our Manufacturing Excellence</h2>
+                <div class="products-grid">
+                    <div class="product-category">
+                        <h3>Primary Products</h3>
+                        <ul>
+                            <li>Stainless Steel Exhaust Hood</li>
+                            <li>Stainless Steel Exhaust Grease Filter</li>
+                            <li>G.I. Ducting</li>
+                            <li>M.S. Exhaust Centrifugal Blower</li>
+                            <li>Axial Fan</li>
+                            <li>M.S. Pipe</li>
+                            <li>Fresh Air Filter & Air Grill with Damper</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="manufacturing-capabilities">
+                        <h3>Our Capabilities</h3>
+                        <p>We are equipped with:</p>
+                        <ul>
+                            <li>Modern manufacturing facilities</li>
+                            <li>Highly skilled human resources</li>
+                            <li>Advanced technologies</li>
+                            <li>Latest machinery</li>
+                            <li>Rigorous quality testing procedures</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Professional Kitchen Equipment. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="menu-overlay"></div>
+    <script src="script.js"></script>
+</body>
+</html>

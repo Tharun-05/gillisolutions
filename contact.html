@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Professional Kitchen Equipment</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Company Logo">
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="home.html" class="nav-icon" data-tooltip="Home">
+                            <i class="fas fa-home"></i>
+                            <span class="nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="Products.html" class="nav-icon dropbtn" data-tooltip="Products">
+                            <i class="fas fa-box"></i>
+                            <span class="nav-text">Products</span>
+                            <i class="fas fa-chevron-down mobile-arrow"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="Products.html#cooking">Cooking Equipment</a>
+                            <a href="Products.html#refrigeration">Refrigeration</a>
+                            <a href="Products.html#preparation">Food Preparation</a>
+                            <a href="Products.html#washing">Washing Equipment</a>
+                            <a id="showAllProductsBtn">Show All Products</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="services.html" class="nav-icon" data-tooltip="Services">
+                            <i class="fas fa-cogs"></i>
+                            <span class="nav-text">Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="clients.html" class="nav-icon" data-tooltip="Clients">
+                            <i class="fas fa-users"></i>
+                            <span class="nav-text">Clients</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-icon" data-tooltip="About">
+                            <i class="fas fa-info-circle"></i>
+                            <span class="nav-text">About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-icon" data-tooltip="Contact">
+                            <i class="fas fa-envelope"></i>
+                            <span class="nav-text">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                <input type="hidden" name="access_key" value="bc1c1a86-4322-4d5b-ab17-55346558ef3a">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="number" name="phone" placeholder="Phone" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <p>+1 234 567 890</p>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <p>info@kitchenequip.com</p>
+                </div>
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Business Street, City, Country</p>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019284507963!2d144.9630579153168!3d-37.81410797975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d7f4f1b1a1b!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1633072871234!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+     <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Professional Kitchen Equipment. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="menu-overlay"></div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="product-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Company Logo">
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="index.html" class="nav-icon" data-tooltip="Home">
+                            <i class="fas fa-home"></i>
+                            <span class="nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="Products.html" class="nav-icon dropbtn" data-tooltip="Products">
+                            <i class="fas fa-box"></i>
+                            <span class="nav-text">Products</span>
+                            <i class="fas fa-chevron-down mobile-arrow"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="Products.html#cooking">Cooking Equipment</a>
+                            <a href="Products.html#refrigeration">Refrigeration</a>
+                            <a href="Products.html#preparation">Food Preparation</a>
+                            <a href="Products.html#washing">Washing Equipment</a>
+                            <a id="showAllProductsBtn">Show All Products</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="services.html" class="nav-icon" data-tooltip="Services">
+                            <i class="fas fa-cogs"></i>
+                            <span class="nav-text">Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="clients.html" class="nav-icon" data-tooltip="Clients">
+                            <i class="fas fa-users"></i>
+                            <span class="nav-text">Clients</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-icon" data-tooltip="About">
+                            <i class="fas fa-info-circle"></i>
+                            <span class="nav-text">About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-icon" data-tooltip="Contact">
+                            <i class="fas fa-envelope"></i>
+                            <span class="nav-text">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="safety-banner">
+            <p>Our products are designed with chefs' safety in mind. Quality and safety for professional kitchens.</p>
+        </div>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-content" style="display: flex;">
+            <img id="productImage" src="" alt="Product Image" style="width: 50%;"/>
+            <div class="product-info">
+                <h1 id="productName"></h1>
+                <p id="productDescription"></p>
+                <span id="productPrice"></span>
+                
+                <!-- Long Description -->
+                <div id="longDescription">
+                    <h2>Product Details</h2>
+                    <p id="longProductDescription"></p>
+                </div>
+
+                <!-- Specifications -->
+                <div id="productSpecifications">
+                    <h3>Specifications</h3>
+                    <ul id="specList"></ul>
+                </div>
+
+                <!-- Reviews -->
+                <div id="productReviews">
+                    <h3>Customer Reviews</h3>
+                    <ul id="reviewsList"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Professional Kitchen Equipment. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function showMenu() {
+            document.getElementById("navLinks").style.right = "0";
+        }
+        
+        function hideMenu() {
+            document.getElementById("navLinks").style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

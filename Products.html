@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Professional Kitchen Equipment</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Company Logo">
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="index.html" class="nav-icon" data-tooltip="Home">
+                            <i class="fas fa-home"></i>
+                            <span class="nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="Products.html" class="nav-icon dropbtn" data-tooltip="Products">
+                            <i class="fas fa-box"></i>
+                            <span class="nav-text">Products</span>
+                            <i class="fas fa-chevron-down mobile-arrow"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="Products.html#cooking">Cooking Equipment</a>
+                            <a href="Products.html#refrigeration">Refrigeration</a>
+                            <a href="Products.html#preparation">Food Preparation</a>
+                            <a href="Products.html#washing">Washing Equipment</a>
+                            <a id="showAllProductsBtn">Show All Products</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="services.html" class="nav-icon" data-tooltip="Services">
+                            <i class="fas fa-cogs"></i>
+                            <span class="nav-text">Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="clients.html" class="nav-icon" data-tooltip="Clients">
+                            <i class="fas fa-users"></i>
+                            <span class="nav-text">Clients</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-icon" data-tooltip="About">
+                            <i class="fas fa-info-circle"></i>
+                            <span class="nav-text">About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-icon" data-tooltip="Contact">
+                            <i class="fas fa-envelope"></i>
+                            <span class="nav-text">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="safety-banner">
+            <p>Our products are designed with chefs' safety in mind. Quality and safety for professional kitchens.</p>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="https://cdnb.artstation.com/p/assets/images/images/051/015/741/large/tdv-studios-kitchen-angle-2-withlogo.jpg?1656261361" alt="Kitchen Equipment 1">
+                <div class="slide-content">
+                    <h1>Professional Kitchen Equipment Solutions</h1>
+                    <p>Quality equipment for commercial kitchens</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://www.armaghi.com/wp-content/uploads/2020/04/SRC-12-1000x600.jpg" alt="Kitchen Equipment 2">
+                <div class="slide-content">
+                    <h1>Industrial Grade Exhaust Systems</h1>
+                    <p>Advanced ventilation solutions for your kitchen</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://i.pinimg.com/originals/51/ea/d8/51ead852ff3d065b03a9d4398db3cccb.jpg" alt="Kitchen Equipment 3">
+                <div class="slide-content">
+                    <h1>Custom Kitchen Solutions</h1>
+                    <p>Tailored to your specific needs</p>
+                </div>
+            </div>
+            
+            <!-- Navigation Arrows -->
+            <button class="carousel-btn prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- Dots Navigation -->
+            <div class="carousel-dots"></div>
+        </div>
+    </section>
+    
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <!-- Products will be loaded dynamically -->
+        </div>
+    </section>
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightboxImage" src="" alt="Maximized Product Image">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Professional Kitchen Equipment. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="menu-overlay"></div>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if there's a category hash in the URL
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                // Load products for that category
+                loadProducts(hash);
+            }
+            
+            // Listen for hash changes to update products
+            window.addEventListener('hashchange', function() {
+                const newHash = window.location.hash.substring(1);
+                if (newHash) {
+                    loadProducts(newHash);
+                } else {
+                    loadProducts(); // Show all products if hash is removed
+                }
+            });
+        });
+    </script>
+</body>
+</html>

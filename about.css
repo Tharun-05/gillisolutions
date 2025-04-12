@@ -1,0 +1,239 @@
+/* About Section Styles */
+section {
+    padding: 80px 6%;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.about {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Company Intro Section */
+.company-intro {
+    margin-top: 60px;
+    padding: 80px 6%;
+    background: #f9f9f9;
+}
+
+.company-intro h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #4db8ff;
+}
+
+.company-intro p {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.company-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.company-description {
+    flex: 1;
+}
+
+.company-description h2 {
+    color: #4db8ff;
+    margin-bottom: 20px;
+}
+
+.company-description p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #555;
+    text-align: left;
+}
+
+.established {
+    font-style: italic;
+    color: #777;
+}
+
+.quick-stats {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat i {
+    font-size: 40px;
+    color: #4db8ff;
+    margin-bottom: 10px;
+}
+
+.stat span {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.stat p {
+    color: #555;
+    text-align: center;
+}
+
+/* Vision & Mission Section */
+.vm-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.vision-box, .mission-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.vision-box:hover, .mission-box:hover {
+    transform: translateY(-5px);
+}
+
+.vision-box h2, .mission-box h2 {
+    color: #4db8ff;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vision-box ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.vision-box ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Company History Section */
+.company-history {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.company-history h2 {
+    color: #4db8ff;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.company-history p {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.core-values {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.core-values h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.core-values ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding-left: 20px;
+}
+
+/* Products Overview Section */
+.products-overview h2 {
+    color: #4db8ff;
+    margin-bottom: 25px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.product-category, .manufacturing-capabilities {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-category h3, .manufacturing-capabilities h3 {
+    color: #4db8ff;
+    margin-bottom: 20px;
+}
+
+.product-category ul, .manufacturing-capabilities ul {
+    padding-left: 20px;
+}
+
+.product-category ul li, .manufacturing-capabilities ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .intro-container {
+        flex-direction: column;
+    }
+
+    .vm-container, .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-container {
+        padding: 0 15px;
+    }
+
+    .vision-box, .mission-box, .company-history, .product-category, .manufacturing-capabilities {
+        padding: 20px;
+    }
+    
+    .quick-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

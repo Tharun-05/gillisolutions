@@ -1,0 +1,236 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Kitchen Equipment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.gillisolutions.com/sites/default/files/Logo-gillisolutions_v3.png" alt="Company Logo">
+            </div>
+            <!-- Navigation -->
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li>
+                            <a href="#home" class="nav-icon" data-tooltip="Home">
+                                <i class="fas fa-home"></i>
+                                <span class="nav-text">Home</span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="Products.html" class="nav-icon dropbtn" data-tooltip="Products">
+                                <i class="fas fa-box"></i>
+                                <span class="nav-text">Products</span>
+                                <i class="fas fa-chevron-down mobile-arrow"></i>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="#cooking">Cooking Equipment</a>
+                                <a href="#refrigeration">Refrigeration</a>
+                                <a href="#preparation">Food Preparation</a>
+                                <a href="#washing">Washing Equipment</a>
+                                <a id="showAllProductsBtn">Show All Products</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="services.html" class="nav-icon" data-tooltip="Services">
+                                <i class="fas fa-cogs"></i>
+                                <span class="nav-text">Services</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="clients.html" class="nav-icon" data-tooltip="Clients">
+                                <i class="fas fa-users"></i>
+                                <span class="nav-text">Clients</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="nav-icon" data-tooltip="About">
+                                <i class="fas fa-info-circle"></i>
+                                <span class="nav-text">About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="nav-icon" data-tooltip="Contact">
+                                <i class="fas fa-envelope"></i>
+                                <span class="nav-text">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="safety-banner">
+            <p>Our products are designed with chefs' safety in mind. Quality and safety for professional kitchens.</p>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- Hero Section with Carousel -->
+<section class="hero" id="home">
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="https://cdnb.artstation.com/p/assets/images/images/051/015/741/large/tdv-studios-kitchen-angle-2-withlogo.jpg?1656261361" alt="Kitchen Equipment 1">
+            <div class="slide-content">
+                <h1>Professional Kitchen Equipment Solutions</h1>
+                <p>Quality equipment for commercial kitchens</p>
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <img src="https://www.armaghi.com/wp-content/uploads/2020/04/SRC-12-1000x600.jpg" alt="Kitchen Equipment 2">
+            <div class="slide-content">
+                <h1>Industrial Grade Exhaust Systems</h1>
+                <p>Advanced ventilation solutions for your kitchen</p>
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <img src="https://i.pinimg.com/originals/51/ea/d8/51ead852ff3d065b03a9d4398db3cccb.jpg" alt="Kitchen Equipment 3">
+            <div class="slide-content">
+                <h1>Custom Kitchen Solutions</h1>
+                <p>Tailored to your specific needs</p>
+            </div>
+        </div>
+        
+        <!-- Navigation Arrows -->
+        <button class="carousel-btn prev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn next">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <!-- Dots Navigation -->
+        <div class="carousel-dots"></div>
+    </div>
+</section>
+
+<div id="loadingScreen" class="loading-screen">
+    <div class="logo-container">
+        <!-- <img src="https://gillisolutions.com/sites/default/files/Logo-gillisolutions_v3.png" alt="Netflix Logo" id="logo" /> -->
+         <h1 id="logo">Gilli Solutions <h6><em>--Living clean</em></h6> </h1>
+    </div>
+</div>
+<!-- Safety Information Section -->
+<section class="safety-info">
+    <div class="safety-content">
+        <div class="safety-animation">
+            <img src="https://static.wixstatic.com/media/704c83_51c754d86bf24963aabba72dd12ddc97~mv2.gif" alt="Safety Animation">
+        </div>
+        <!-- <div class="safety-text">
+            <h2>Chef's Safety Tips</h2>
+            <ul>
+                <li>Always wear protective gear while cooking.</li>
+                <li>Keep your kitchen clean to avoid accidents.</li>
+                <li>Use proper tools for each task to ensure safety.</li>
+                <li>Regularly maintain and check your equipment.</li>
+            </ul>
+        </div> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NORZ_G-2j6M?si=dK8N-Z40lN7e1CdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="safety-animation">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_632/0845c232253239.56766f2d063c9.gif" alt="Safety Animation">
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap Carousel Section -->
+<!-- <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://plus.unsplash.com/premium_photo-1661889228348-3928f5df1239?q=80&w=3272&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.istockphoto.com/id/890873918/photo/large-kitchen-house-fire.jpg?s=2048x2048&w=is&k=20&c=igKKTgOJg1JItRHmoR8EW2HvpoIz-aG788RJZ1tQ-Gw=" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+
+   
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form id="contactForm" action="http://localhost:5000/contact" method="POST">
+                <div class="form-group">
+                    <input type="text" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="number" placeholder="Phone" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <p>+1 234 567 890</p>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <p>info@kitchenequip.com</p>
+                </div>
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Business Street, City, Country</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Professional Kitchen Equipment. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="menu-overlay"></div>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</body>
+</html>

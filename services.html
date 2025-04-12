@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Professional Kitchen Equipment</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Company Logo">
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="index.html" class="nav-icon" data-tooltip="Home">
+                            <i class="fas fa-home"></i>
+                            <span class="nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="Products.html" class="nav-icon dropbtn" data-tooltip="Products">
+                            <i class="fas fa-box"></i>
+                            <span class="nav-text">Products</span>
+                            <i class="fas fa-chevron-down mobile-arrow"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="Products.html#cooking">Cooking Equipment</a>
+                            <a href="Products.html#refrigeration">Refrigeration</a>
+                            <a href="Products.html#preparation">Food Preparation</a>
+                            <a href="Products.html#washing">Washing Equipment</a>
+                            <a id="showAllProductsBtn">Show All Products</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="services.html" class="nav-icon" data-tooltip="Services">
+                            <i class="fas fa-cogs"></i>
+                            <span class="nav-text">Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="clients.html" class="nav-icon" data-tooltip="Clients">
+                            <i class="fas fa-users"></i>
+                            <span class="nav-text">Clients</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-icon" data-tooltip="About">
+                            <i class="fas fa-info-circle"></i>
+                            <span class="nav-text">About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-icon" data-tooltip="Contact">
+                            <i class="fas fa-envelope"></i>
+                            <span class="nav-text">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="safety-banner">
+            <p>Our products are designed with chefs' safety in mind. Quality and safety for professional kitchens.</p>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <!-- Add your services content here -->
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="number" name="phone" placeholder="Phone" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <!-- ...existing code... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <!-- ...existing code... -->
+        </div>
+        <div class="footer-bottom">
+            <!-- ...existing code... -->
+        </div>
+    </footer>
+
+    <div class="menu-overlay"></div>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init('YOUR_USER_ID');
+        })();
+    </script>
+</body>
+</html>
