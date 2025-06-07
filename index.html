@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,15 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Kitchen Equipment</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css"> 
     <link rel="stylesheet" href="common.css">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
     <header>
+        
         <nav>
             <div class="logo">
-                <img src="https://www.gillisolutions.com/sites/default/files/Logo-gillisolutions_v3.png" alt="Company Logo">
+                <img src="./Images/gilli logo.webp" alt="Company Logo">
             </div>
             <!-- Navigation -->
                 <div class="nav-links" id="navLinks">
@@ -68,38 +83,38 @@
                 </div>
             <i class="fas fa-bars" onclick="showMenu()"></i>
         </nav>
-        <div class="safety-banner">
+        <!-- <div class="safety-banner">
             <p>Our products are designed with chefs' safety in mind. Quality and safety for professional kitchens.</p>
-        </div>
+        </div> -->
     </header>
 
     <!-- Hero Section -->
     <!-- Hero Section with Carousel -->
-<section class="hero" id="home">
-    <div class="carousel-container">
-        <div class="carousel-slide">
-            <img src="https://cdnb.artstation.com/p/assets/images/images/051/015/741/large/tdv-studios-kitchen-angle-2-withlogo.jpg?1656261361" alt="Kitchen Equipment 1">
-            <div class="slide-content">
-                <h1>Professional Kitchen Equipment Solutions</h1>
-                <p>Quality equipment for commercial kitchens</p>
+    <section class="hero" id="home">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="./Images/home.jpeg" alt="Kitchen Equipment 1">
+                <div class="slide-content">
+                    <h1>Professional Kitchen Equipment Solutions</h1>
+                    <p>Quality equipment for commercial kitchens</p>
+                </div>
             </div>
-        </div>
-        <div class="carousel-slide">
-            <img src="https://www.armaghi.com/wp-content/uploads/2020/04/SRC-12-1000x600.jpg" alt="Kitchen Equipment 2">
-            <div class="slide-content">
-                <h1>Industrial Grade Exhaust Systems</h1>
-                <p>Advanced ventilation solutions for your kitchen</p>
+            <div class="carousel-slide">
+                <img src="https://www.armaghi.com/wp-content/uploads/2020/04/SRC-12-1000x600.jpg" alt="Kitchen Equipment 2">
+                <div class="slide-content">
+                    <h1>Industrial Grade Exhaust Systems</h1>
+                    <p>Advanced ventilation solutions for your kitchen</p>
+                </div>
             </div>
-        </div>
-        <div class="carousel-slide">
-            <img src="https://i.pinimg.com/originals/51/ea/d8/51ead852ff3d065b03a9d4398db3cccb.jpg" alt="Kitchen Equipment 3">
-            <div class="slide-content">
-                <h1>Custom Kitchen Solutions</h1>
-                <p>Tailored to your specific needs</p>
+            <div class="carousel-slide">
+                <img src="https://i.pinimg.com/originals/51/ea/d8/51ead852ff3d065b03a9d4398db3cccb.jpg" alt="Kitchen Equipment 3">
+                <div class="slide-content">
+                    <h1>Custom Kitchen Solutions</h1>
+                    <p>Tailored to your specific needs</p>
+                </div>
             </div>
-        </div>
-        
-        <!-- Navigation Arrows -->
+            
+            <!-- Navigation Arrows -->
         <button class="carousel-btn prev">
             <i class="fas fa-chevron-left"></i>
         </button>
@@ -109,61 +124,96 @@
         
         <!-- Dots Navigation -->
         <div class="carousel-dots"></div>
-    </div>
-</section>
-
-<div id="loadingScreen" class="loading-screen">
-    <div class="logo-container">
-        <!-- <img src="https://gillisolutions.com/sites/default/files/Logo-gillisolutions_v3.png" alt="Netflix Logo" id="logo" /> -->
-         <h1 id="logo">Gilli Solutions <h6><em>--Living clean</em></h6> </h1>
-    </div>
-</div>
-<!-- Safety Information Section -->
-<section class="safety-info">
-    <div class="safety-content">
-        <div class="safety-animation">
-            <img src="https://static.wixstatic.com/media/704c83_51c754d86bf24963aabba72dd12ddc97~mv2.gif" alt="Safety Animation">
         </div>
-        <!-- <div class="safety-text">
-            <h2>Chef's Safety Tips</h2>
-            <ul>
-                <li>Always wear protective gear while cooking.</li>
-                <li>Keep your kitchen clean to avoid accidents.</li>
-                <li>Use proper tools for each task to ensure safety.</li>
-                <li>Regularly maintain and check your equipment.</li>
-            </ul>
-        </div> -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/NORZ_G-2j6M?si=dK8N-Z40lN7e1CdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <div class="safety-animation">
-            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_632/0845c232253239.56766f2d063c9.gif" alt="Safety Animation">
+    </section>
+
+    <section class="featured-section">
+        <h2 class="section-header">Our Commitment to Excellence</h2>
+        <div class="featured-container">
+            <div class="featured-image">
+                <img src="./Images/IMG_5299.JPG" alt="Professional Kitchen Equipment">
+            </div>
+            <div class="featured-content">
+                <h3>Quality Kitchen Solutions</h3>
+                <p>We provide top-tier professional kitchen equipment designed to meet the demanding needs of modern commercial kitchens. Our products combine durability, efficiency, and innovative design to enhance your culinary operations.</p>
+                <p>With decades of industry experience, we understand what chefs and kitchen staff need to perform at their best. Our solutions are tailored to maximize productivity while ensuring safety and compliance with industry standards.</p>
+                <a href="Products.html" class="btn-primary">Explore Our Products</a>
+            </div>
+        </div>
+    </section>
+
+   <!-- Benefits Section with Animated Stats -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2>Why Choose Our Equipment</h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card slide-up" style="animation-delay: 0.1s;">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Increased Efficiency</h3>
+                    <div class="stat-counter" data-target="40">0</div>
+                    <span class="percent">%</span>
+                    <p>Average increase in kitchen productivity</p>
+                </div>
+                
+                <div class="benefit-card slide-up" style="animation-delay: 0.3s;">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Enhanced Safety</h3>
+                    <div class="stat-counter" data-target="95">0</div>
+                    <span class="percent">%</span>
+                    <p>Safety rating across all our equipment</p>
+                </div>
+                
+                <div class="benefit-card slide-up" style="animation-delay: 0.5s;">
+                    <div class="benefit-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Energy Efficient</h3>
+                    <div class="stat-counter" data-target="30">0</div>
+                    <span class="percent">%</span>
+                    <p>Average energy savings compared to standard equipment</p>
+                </div>
+                
+                <div class="benefit-card slide-up" style="animation-delay: 0.7s;">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Reliable Support</h3>
+                    <div class="stat-counter" data-target="24">0</div>
+                    <span>/7</span>
+                    <p>Technical support and maintenance service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Chat -->
+    <div class="support-chat" id="supportChat">
+        <div class="chat-header">
+            <h3>Equipment Expert</h3>
+            <button class="minimize-chat" aria-label="Minimize chat"><i class="fas fa-minus"></i></button>
+        </div>
+        <div class="chat-messages">
+            <div class="message bot">
+                <div class="message-content">Hello! I can help you choose the right kitchen equipment. What are you looking for today?</div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type your question here...">
+            <button aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
         </div>
     </div>
-</section>
 
-<!-- Bootstrap Carousel Section -->
-<!-- <div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://plus.unsplash.com/premium_photo-1661889228348-3928f5df1239?q=80&w=3272&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://media.istockphoto.com/id/890873918/photo/large-kitchen-house-fire.jpg?s=2048x2048&w=is&k=20&c=igKKTgOJg1JItRHmoR8EW2HvpoIz-aG788RJZ1tQ-Gw=" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
-      </div>
+    <div id="loadingScreen" class="loading-screen">
+        <div class="logo-container">
+            <!-- <img src="https://gillisolutions.com/sites/default/files/Logo-gillisolutions_v3.png" alt="Netflix Logo" id="logo" /> -->
+            <h1 id="logo">Gilli Solutions <h6><em>--Living clean</em></h6> </h1>
+        </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div> -->
-
-   
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
@@ -185,17 +235,32 @@
                 <button type="submit">Send Message</button>
             </form>
             <div class="contact-info">
-                <div>
+                <div class="contact-info-item">
                     <i class="fas fa-phone"></i>
-                    <p>+1 234 567 890</p>
+                    <div>
+                        <p>+1 234 567 890</p>
+                    </div>
                 </div>
-                <div>
+                
+                <div class="contact-info-item">
                     <i class="fas fa-envelope"></i>
-                    <p>info@kitchenequip.com</p>
+                    <div>
+                        <p>info@kitchenequip.com</p>
+                    </div>
                 </div>
-                <div>
+                
+                <div class="contact-info-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <p>123 Business Street, City, Country</p>
+                    <div>
+                        <p>123 Business Street, City, Country</p>
+                    </div>
+                </div>
+                
+                <div class="contact-info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <p>Monday - Friday: 9am - 5pm</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -203,33 +268,76 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="products.html#cooking">Cooking Equipment</a></li>
+                        <li><a href="products.html#refrigeration">Refrigeration</a></li>
+                        <li><a href="products.html#preparation">Food Preparation</a></li>
+                        <li><a href="products.html#washing">Washing Equipment</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#installation">Installation</a></li>
+                        <li><a href="services.html#maintenance">Maintenance</a></li>
+                        <li><a href="services.html#repair">Repair</a></li>
+                        <li><a href="services.html#consultation">Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    
+                    <!-- <div class="mt-4">
+                        <h4>Subscribe to our newsletter</h4>
+                        <form class="newsletter-form mt-2">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div> -->
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 Professional Kitchen Equipment. All rights reserved.</p>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Professional Kitchen Equipment. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
     <div class="menu-overlay"></div>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    
+    <!-- Three.js for 3D models -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/examples/js/loaders/GLTFLoader.js"></script>
+    
+    <script type="module" src="script.js"></script>
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 </body>
