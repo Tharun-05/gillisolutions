@@ -3,133 +3,625 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clients - Professional Kitchen Equipment</title>
+    <title>Our Clients - Professional Kitchen Equipment | Gilli Solutions</title>
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="clients.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
     <header>
         <nav>
             <div class="logo">
-                <img src="logo.png" alt="Company Logo">
+                <img src="./Images/gilli logo.webp" alt="Company Logo">
             </div>
-            <div class="nav-links" id="navLinks">
-                <i class="fas fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li>
-                        <a href="home.html" class="nav-icon" data-tooltip="Home">
-                            <i class="fas fa-home"></i>
-                            <span class="nav-text">Home</span>
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="Products.html" class="nav-icon dropbtn" data-tooltip="Products">
-                            <i class="fas fa-box"></i>
-                            <span class="nav-text">Products</span>
-                            <i class="fas fa-chevron-down mobile-arrow"></i>
-                        </a>
-                        <div class="dropdown-content">
-                            <a href="Products.html#cooking">Cooking Equipment</a>
-                            <a href="Products.html#refrigeration">Refrigeration</a>
-                            <a href="Products.html#preparation">Food Preparation</a>
-                            <a href="Products.html#washing">Washing Equipment</a>
-                            <a id="showAllProductsBtn">Show All Products</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="services.html" class="nav-icon" data-tooltip="Services">
-                            <i class="fas fa-cogs"></i>
-                            <span class="nav-text">Services</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="clients.html" class="nav-icon" data-tooltip="Clients">
-                            <i class="fas fa-users"></i>
-                            <span class="nav-text">Clients</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about.html" class="nav-icon" data-tooltip="About">
-                            <i class="fas fa-info-circle"></i>
-                            <span class="nav-text">About</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html" class="nav-icon" data-tooltip="Contact">
-                            <i class="fas fa-envelope"></i>
-                            <span class="nav-text">Contact</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <!-- Navigation -->
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li>
+                            <a href="index.html" class="nav-icon" data-tooltip="Home">
+                                <i class="fas fa-home"></i>
+                                <span class="nav-text">Home</span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="Products.html" class="nav-icon dropbtn" data-tooltip="Products">
+                                <i class="fas fa-box"></i>
+                                <span class="nav-text">Products</span>
+                                <i class="fas fa-chevron-down mobile-arrow"></i>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="#cooking">Cooking Equipment</a>
+                                <a href="#refrigeration">Refrigeration</a>
+                                <a href="#preparation">Food Preparation</a>
+                                <a href="#washing">Washing Equipment</a>
+                                <a id="showAllProductsBtn">Show All Products</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="services.html" class="nav-icon" data-tooltip="Services">
+                                <i class="fas fa-cogs"></i>
+                                <span class="nav-text">Services</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="clients.html" class="nav-icon" data-tooltip="Clients">
+                                <i class="fas fa-users"></i>
+                                <span class="nav-text">Clients</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="nav-icon" data-tooltip="About">
+                                <i class="fas fa-info-circle"></i>
+                                <span class="nav-text">About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="nav-icon" data-tooltip="Contact">
+                                <i class="fas fa-envelope"></i>
+                                <span class="nav-text">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             <i class="fas fa-bars" onclick="showMenu()"></i>
         </nav>
     </header>
 
-    <!-- Clients Section -->
-    <section class="clients" id="clients">
-        <h2>Our Clients</h2>
-        <div class="client-container">
-            <div class="client">
-                <div class="client-video">
-                    <iframe src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
+    <!-- Hero Section -->
+    <section class="clients-hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Our Valued Clients</h1>
+            <p>Trusted by leading businesses across the hospitality industry</p>
+        </div>
+    </section>
+
+    <!-- Client Stats -->
+    <section class="client-stats">
+        <div class="container">
+            <div class="stats-container">
+                <div class="stat-item" data-aos="fade-up">
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-label">Happy Clients</div>
                 </div>
-                <div class="client-content">
-                    <h3>Client Name 1</h3>
-                    <p>Client 1's experience with our company has been exceptional. They have been using our products for over 5 years and have seen significant improvements in their kitchen operations.</p>
+                
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number" data-count="95">0</div>
+                    <div class="stat-label">Client Retention Rate (%)</div>
+                </div>
+                
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number" data-count="10">0</div>
+                    <div class="stat-label">Years of Excellence</div>
+                </div>
+                
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number" data-count="25">0</div>
+                    <div class="stat-label">Countries Served</div>
                 </div>
             </div>
-            <div class="client">
-                <div class="client-video">
-                    <iframe src="https://www.youtube.com/embed/example2" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="client-content">
-                    <h3>Client Name 2</h3>
-                    <p>Client 2 appreciates the quality and durability of our kitchen equipment. Their testimonial highlights the efficiency and reliability of our products.</p>
+        </div>
+    </section>
+
+    <!-- Featured Clients -->
+    <section class="featured-clients">
+        <div class="container">
+            <span class="section-subtitle" data-aos="fade-up">Trusted Partners</span>
+            <h2 class="section-title" data-aos="fade-up">Our Featured Clients</h2>
+            <p class="section-description" data-aos="fade-up">We're proud to work with leading businesses across various industries, providing them with top-quality kitchen equipment solutions.</p>
+            
+            <div class="logo-carousel-container" data-aos="fade-up">
+                <div class="client-logos">
+                    <div class="logo-item">
+                        <img src="https://via.placeholder.com/150x80?text=Client+1" alt="Client Logo 1">
+                    </div>
+                    <div class="logo-item">
+                        <img src="https://via.placeholder.com/150x80?text=Client+2" alt="Client Logo 2">
+                    </div>
+                    <div class="logo-item">
+                        <img src="https://via.placeholder.com/150x80?text=Client+3" alt="Client Logo 3">
+                    </div>
+                    <div class="logo-item">
+                        <img src="https://via.placeholder.com/150x80?text=Client+4" alt="Client Logo 4">
+                    </div>
+                    <div class="logo-item">
+                        <img src="https://via.placeholder.com/150x80?text=Client+5" alt="Client Logo 5">
+                    </div>
+                    <div class="logo-item">
+                        <img src="https://via.placeholder.com/150x80?text=Client+6" alt="Client Logo 6">
+                    </div>
+                    <div class="logo-item">
+                        <img src="https://via.placeholder.com/150x80?text=Client+7" alt="Client Logo 7">
+                    </div>
+                    <div class="logo-item">
+                        <img src="https://via.placeholder.com/150x80?text=Client+8" alt="Client Logo 8">
+                    </div>
+                    <div class="logo-item">
+                        <img src="https://via.placeholder.com/150x80?text=Client+9" alt="Client Logo 9">
+                    </div>
                 </div>
             </div>
-            <div class="client">
-                <div class="client-video">
-                    <iframe src="https://www.youtube.com/embed/example3" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>>
+
+    <!-- Client Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <span class="section-subtitle" data-aos="fade-up">Client Feedback</span>
+            <h2 class="section-title" data-aos="fade-up">Success Stories</h2>
+            <p class="section-description" data-aos="fade-up">Hear what our clients have to say about their experience working with us.</p>
+            
+            <div class="testimonial-tabs" data-aos="fade-up">
+                <div class="tab-navigation">
+                    <button class="tab-btn active" data-tab="restaurants">Restaurants</button>
+                    <button class="tab-btn" data-tab="hotels">Hotels</button>
+                    <button class="tab-btn" data-tab="institutions">Institutions</button>
+                    <button class="tab-btn" data-tab="catering">Catering</button>
                 </div>
-                <div class="client-content">
-                    <h3>Client Name 3</h3>
-                    <p>Client 3's feedback emphasizes the excellent customer service and support they received from our team. They highly recommend our products to other businesses.</p>
+                
+                <div class="tab-content">
+                    <!-- Restaurants Tab -->
+                    <div id="restaurants" class="tab-pane active">
+                        <div class="testimonial-grid">
+                            <div class="testimonial-card">
+                                <div class="testimonial-video">
+                                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Client Testimonial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="client-info">
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                                        <div>
+                                            <h3>Michael Johnson</h3>
+                                            <span>Executive Chef, The Grand Restaurant</span>
+                                        </div>
+                                    </div>
+                                    <p>"The kitchen equipment from Gilli Solutions has transformed our operations. The quality and efficiency of their products have helped us serve our customers better while reducing our energy costs."</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="testimonial-card">
+                                <div class="testimonial-video">
+                                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Client Testimonial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="client-info">
+                                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+                                        <div>
+                                            <h3>Sarah Williams</h3>
+                                            <span>Owner, Coastal Café</span>
+                                        </div>
+                                    </div>
+                                    <p>"As a small business owner, I needed reliable equipment that wouldn't break the bank. Gilli Solutions provided exactly what I needed, with excellent customer service and support."</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Hotels Tab -->
+                    <div id="hotels" class="tab-pane">
+                        <div class="testimonial-grid">
+                            <div class="testimonial-card">
+                                <div class="testimonial-video">
+                                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Client Testimonial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="client-info">
+                                        <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Client">
+                                        <div>
+                                            <h3>Robert Thompson</h3>
+                                            <span>Food & Beverage Director, Luxury Hotel Chain</span>
+                                        </div>
+                                    </div>
+                                    <p>"Managing multiple hotel kitchens requires reliable equipment and consistent support. Gilli Solutions has been our trusted partner for years, providing excellent products and responsive service."</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="testimonial-card">
+                                <div class="testimonial-video">
+                                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Client Testimonial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="client-info">
+                                        <img src="https://randomuser.me/api/portraits/women/24.jpg" alt="Client">
+                                        <div>
+                                            <h3>Jennifer Lee</h3>
+                                            <span>Executive Chef, Boutique Hotel</span>
+                                        </div>
+                                    </div>
+                                    <p>"The exhaust systems from Gilli Solutions have significantly improved our kitchen environment. Their attention to detail and customization options allowed us to create the perfect setup for our unique space."</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Institutions Tab -->
+                    <div id="institutions" class="tab-pane">
+                        <div class="testimonial-grid">
+                            <div class="testimonial-card">
+                                <div class="testimonial-video">
+                                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Client Testimonial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="client-info">
+                                        <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Client">
+                                        <div>
+                                            <h3>Dr. James Wilson</h3>
+                                            <span>Facilities Director, University</span>
+                                        </div>
+                                    </div>
+                                    <p>"Our university cafeteria serves thousands of students daily. The industrial kitchen equipment from Gilli Solutions has proven to be durable, efficient, and easy to maintain, even under heavy use."</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="testimonial-card">
+                                <div class="testimonial-video">
+                                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Client Testimonial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="client-info">
+                                        <img src="https://randomuser.me/api/portraits/women/54.jpg" alt="Client">
+                                        <div>
+                                            <h3>Patricia Brown</h3>
+                                            <span>Head of Catering, Medical Center</span>
+                                        </div>
+                                    </div>
+                                    <p>"In a healthcare setting, hygiene and reliability are paramount. Gilli Solutions' equipment meets our strict standards and has helped us maintain the highest level of food safety for our patients and staff."</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Catering Tab -->
+                    <div id="catering" class="tab-pane">
+                        <div class="testimonial-grid">
+                            <div class="testimonial-card">
+                                <div class="testimonial-video">
+                                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Client Testimonial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="client-info">
+                                        <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="Client">
+                                        <div>
+                                            <h3>David Martinez</h3>
+                                            <span>Owner, Elite Catering Services</span>
+                                        </div>
+                                    </div>
+                                    <p>"The portable equipment from Gilli Solutions has been a game-changer for our catering business. It's durable enough for frequent transport and powerful enough for large events."</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="testimonial-card">
+                                <div class="testimonial-video">
+                                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Client Testimonial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="client-info">
+                                        <img src="https://randomuser.me/api/portraits/women/64.jpg" alt="Client">
+                                        <div>
+                                            <h3>Emily Chen</h3>
+                                            <span>Executive Chef, Corporate Catering</span>
+                                        </div>
+                                    </div>
+                                    <p>"We cater for corporate events of all sizes. The versatility and reliability of Gilli Solutions' equipment have helped us deliver exceptional food service regardless of the venue or event size."</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="case-studies">
+        <div class="container">
+            <span class="section-subtitle" data-aos="fade-up">Success Stories</span>
+            <h2 class="section-title" data-aos="fade-up">Client Case Studies</h2>
+            <p class="section-description" data-aos="fade-up">Explore how our solutions have helped businesses overcome challenges and achieve their goals.</p>
+            
+            <div class="case-studies-grid">
+                <div class="case-study-card" data-aos="fade-up">
+                    <div class="case-image">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Case Study">
+                        <div class="case-overlay">
+                            <a href="#" class="read-more">Read Case Study</a>
+                        </div>
+                    </div>
+                    <div class="case-content">
+                        <h3>Five-Star Hotel Kitchen Renovation</h3>
+                        <p>How we helped a luxury hotel upgrade their kitchen facilities while minimizing downtime.</p>
+                        <div class="case-meta">
+                            <span><i class="fas fa-industry"></i> Hospitality</span>
+                            <span><i class="fas fa-map-marker-alt"></i> New York</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="case-study-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="case-image">
+                        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Case Study">
+                        <div class="case-overlay">
+                            <a href="#" class="read-more">Read Case Study</a>
+                        </div>
+                    </div>
+                    <div class="case-content">
+                        <h3>Restaurant Chain Standardization</h3>
+                        <p>Implementing consistent kitchen equipment across 20 locations for a growing restaurant chain.</p>
+                        <div class="case-meta">
+                            <span><i class="fas fa-utensils"></i> Restaurant</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Multiple Locations</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="case-study-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="case-image">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Case Study">
+                        <div class="case-overlay">
+                            <a href="#" class="read-more">Read Case Study</a>
+                        </div>
+                    </div>
+                    <div class="case-content">
+                        <h3>University Dining Hall Modernization</h3>
+                        <p>Upgrading outdated equipment to improve efficiency and reduce energy consumption.</p>
+                        <div class="case-meta">
+                            <span><i class="fas fa-graduation-cap"></i> Education</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Chicago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-card" data-aos="fade-up">
+                    <div class="case-image">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Case Study">
+                        <div class="case-overlay">
+                            <a href="#" class="read-more">Read Case Study</a>
+                        </div>
+                    </div>
+                    <div class="case-content">
+                        <h3>Five-Star Hotel Kitchen Renovation</h3>
+                        <p>How we helped a luxury hotel upgrade their kitchen facilities while minimizing downtime.</p>
+                        <div class="case-meta">
+                            <span><i class="fas fa-industry"></i> Hospitality</span>
+                            <span><i class="fas fa-map-marker-alt"></i> New York</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+            <div class="view-more-container" data-aos="fade-up">
+                <a href="#" class="btn-secondary">View All Case Studies</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery -->
+    <section class="project-gallery">
+        <div class="container">
+            <span class="section-subtitle" data-aos="fade-up">Our Work</span>
+            <h2 class="section-title" data-aos="fade-up">Project Gallery</h2>
+            <p class="section-description" data-aos="fade-up">Take a look at some of our completed projects across various industries.</p>
+            
+            <div class="gallery-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="restaurants">Restaurants</button>
+                <button class="filter-btn" data-filter="hotels">Hotels</button>
+                <button class="filter-btn" data-filter="institutions">Institutions</button>
+                <button class="filter-btn" data-filter="catering">Catering</button>
+            </div>
+            
+            <div class="gallery-grid" data-aos="fade-up">
+                <div class="gallery-item restaurants">
+                    <a href="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" data-lightbox="gallery" data-title="Fine Dining Restaurant Kitchen">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Project Image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Fine Dining Restaurant</h3>
+                                <p>Complete kitchen installation</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item hotels">
+                    <a href="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" data-lightbox="gallery" data-title="Luxury Hotel Kitchen">
+                        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Project Image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Luxury Hotel</h3>
+                                <p>Kitchen renovation project</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item institutions">
+                    <a href="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" data-lightbox="gallery" data-title="University Cafeteria">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Project Image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>University Cafeteria</h3>
+                                <p>High-volume kitchen equipment</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item catering">
+                    <a href="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" data-lightbox="gallery" data-title="Catering Company Setup">
+                        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Project Image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Catering Company</h3>
+                                <p>Mobile kitchen solutions</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item restaurants">
+                    <a href="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" data-lightbox="gallery" data-title="Fast Casual Restaurant">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Project Image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Fast Casual Restaurant</h3>
+                                <p>Efficient kitchen design</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item hotels">
+                    <a href="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" data-lightbox="gallery" data-title="Boutique Hotel Kitchen">
+                        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Project Image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Boutique Hotel</h3>
+                                <p>Custom kitchen installation</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to join our list of satisfied clients?</h2>
+                <p>Contact us today to discuss your kitchen equipment needs</p>
+                <a href="contact.html" class="btn-primary">Get in Touch</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Products.html">Products</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="products.html#cooking">Cooking Equipment</a></li>
+                        <li><a href="products.html#refrigeration">Refrigeration</a></li>
+                        <li><a href="products.html#preparation">Food Preparation</a></li>
+                        <li><a href="products.html#washing">Washing Equipment</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#installation">Installation</a></li>
+                        <li><a href="services.html#maintenance">Maintenance</a></li>
+                        <li><a href="services.html#repair">Repair</a></li>
+                        <li><a href="services.html#consultation">Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    
+                    
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 Professional Kitchen Equipment. All rights reserved.</p>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Gilli Solutions. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
     <div class="menu-overlay"></div>
-    <script src="script.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script type="module" src="script.js"></script>
+    <script src="clients.js"></script>
 </body>
 </html>

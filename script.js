@@ -1,3 +1,4 @@
+import {initSupportChat} from "./support_chat.js";
 // Product data (mocked)
 const products = [
     {
@@ -43,7 +44,7 @@ const products = [
         description: "Heavy-duty mixer for large-scale food preparation",
         image: "https://static.grainger.com/rp/s/is/image/Grainger/46E338_AS01?$adapimg$&hei=1072&wid=1072",
         price: "$1,499",
-        longDescription: "This industrial mixer can handle large batches of dough, batter, and more...",
+        longDescription: "This industrial mixer can handle large batches of dough, batter, and more This industrial mixer can handle large batches of dough ",
         specifications: [
             "Capacity: 50 Liters",
             "Motor Power: 2000W",
@@ -114,11 +115,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // DOM Load Event
 document.addEventListener('DOMContentLoaded', function() {
-    // Only load products automatically if we're on the Products page
+    // If we're on the Products page
     if (window.location.pathname.includes('Products.html')) {
-        loadProducts();
+        // Check if there's a hash in the URL
+        const categoryHash = window.location.hash.substring(1);
+        if (categoryHash) {
+            // Filter products by the category in the hash
+            loadProducts(categoryHash);
+        } else {
+            // Otherwise load all products
+            loadProducts();
+        }
     }
+    // Other initialization code...
     initializeEventListeners();
+});
+
+// Add this to handle hash changes
+window.addEventListener('hashchange', function() {
+    if (window.location.pathname.includes('Products.html')) {
+        const categoryHash = window.location.hash.substring(1);
+        if (categoryHash) {
+            loadProducts(categoryHash);
+        } else {
+            loadProducts();
+        }
+    }
 });
 
 // Load products function
@@ -166,48 +188,167 @@ function loadProducts(category = null) {
 }
 
 // Mobile Menu Functions
-function showMenu() {
-    const navLinks = document.getElementById("navLinks");
-    const menuOverlay = document.querySelector(".menu-overlay");
-    if (navLinks && menuOverlay) {
+    function showMenu() {
+        const navLinks = document.getElementById("navLinks");
+        const menuOverlay = document.querySelector(".menu-overlay");
         navLinks.style.right = "0";
         menuOverlay.style.display = "block";
         document.body.style.overflow = "hidden";
     }
-}
-
-function hideMenu() {
-    const navLinks = document.getElementById("navLinks");
-    const menuOverlay = document.querySelector(".menu-overlay");
-    if (navLinks && menuOverlay) {
+    
+    function hideMenu() {
+        const navLinks = document.getElementById("navLinks");
+        const menuOverlay = document.querySelector(".menu-overlay");
         navLinks.style.right = "-250px";
         menuOverlay.style.display = "none";
         document.body.style.overflow = "auto";
     }
-}
+    
+    // Make functions available globally
+    window.showMenu = showMenu;
+    window.hideMenu = hideMenu;
 
 // Function to open the lightbox
+// /** @function openLightbox - Used in HTML onclick attributes */
 function openLightbox(imageUrl) {
     const lightbox = document.getElementById("lightbox");
     const lightboxImage = document.getElementById("lightboxImage");
     lightbox.style.display = "flex";
     lightboxImage.src = imageUrl;
 }
+window.openLightbox = openLightbox;
 
 // Function to close the lightbox
+// /** @function closeLightbox - Used in HTML onclick attributes */
 function closeLightbox() {
     const lightbox = document.getElementById("lightbox");
     lightbox.style.display = "none";
 }
+window.closeLightbox = closeLightbox;
+// Door Animation and Loading Screen
+// Door Animation and Loading Screen
 document.addEventListener('DOMContentLoaded', () => {
+    // Hide main content initially
+    if (document.querySelector('.hero')) {
+        document.querySelector('.hero').style.display = 'none';
+    }
+    document.body.style.overflow = 'hidden';
+
     // Wait for 3 seconds (time for loading screen)
     setTimeout(() => {
         // Hide loading screen
-        document.getElementById('loadingScreen').style.display = 'none';
+        if (document.getElementById('loadingScreen')) {
+            document.getElementById('loadingScreen').style.display = 'none';
+        }
+        
+        // Show door animation
+        const doorAnimation = document.getElementById('doorAnimation');
+        if (doorAnimation) {
+            doorAnimation.style.display = 'flex';
+            
+            // Setup door trigger click event
+            const doorTrigger = document.getElementById('doorTrigger');
+            if (doorTrigger) {
+                doorTrigger.addEventListener('click', function() {
+                    // Add open class to animate doors
+                    doorAnimation.classList.add('door-open');
+                    
+                    // Wait for animation to complete, then show mobile phones
+                    setTimeout(() => {
+                        doorAnimation.style.display = 'none';
+                        
+                        // Show mobile phones section
+                        const mobilePhonesSection = document.getElementById('mobilePhonesSection');
+                        if (mobilePhonesSection) {
+                            mobilePhonesSection.style.display = 'flex';
+                            // Add a small delay before fading in for smoother transition
+                            setTimeout(() => {
+                                mobilePhonesSection.style.opacity = '1';
+                            }, 100);
+                            
+                            // Add event listener to the continue button
+                            const continueBtn = document.getElementById('continueToSite');
+                            if (continueBtn) {
+                                continueBtn.addEventListener('click', function() {
+                                    // Fade out mobile section
+                                    mobilePhonesSection.style.opacity = '0';
+                                    
+                                    // After fade out, hide mobile section and show main content
+                                    setTimeout(() => {
+                                        mobilePhonesSection.style.display = 'none';
+                                        
+                                        // Show main content
+                                        if (document.querySelector('.hero')) {
+                                            document.querySelector('.hero').style.display = 'flex';
+                                        } else {
+                                            // Fallback if hero section isn't found
+                                            const mainContent = document.getElementById('mainContent');
+                                            if (mainContent) {
+                                                mainContent.style.display = 'block';
+                                            }
+                                        }
+                                        document.body.style.overflow = 'auto';
+                                    }, 800); // Match with opacity transition duration
+                                });
+                            }
+                        } else {
+                            // Fallback if mobile phones section isn't found
+                            if (document.querySelector('.hero')) {
+                                document.querySelector('.hero').style.display = 'flex';
+                            } else {
+                                const mainContent = document.getElementById('mainContent');
+                                if (mainContent) {
+                                    mainContent.style.display = 'block';
+                                }
+                            }
+                            document.body.style.overflow = 'auto';
+                        }
+                    }, 1500); // Match this with door animation duration
+                });
+            }
+        } else {
+            // Fallback if door animation isn't implemented
+            const mainContent = document.getElementById('mainContent');
+            if (mainContent) {
+                mainContent.style.display = 'block';
+            } else if (document.querySelector('.hero')) {
+                document.querySelector('.hero').style.display = 'flex';
+            }
+            document.body.style.overflow = 'auto';
+        }
+    }, 3000); // 3 seconds delay after loading screen
+});
+// Function to restore scrolling - add this to your script.js file
+function restoreScrolling() {
+    document.body.style.overflow = 'auto';
+    document.documentElement.style.overflow = 'auto'; // For Safari
+}
 
-        // Show main content
-        document.getElementById('mainContent').style.display = 'block';
-    }, 3000); // 3 seconds delay
+// Modify the existing continue button handler
+document.addEventListener('DOMContentLoaded', function() {
+    const continueBtn = document.getElementById('continueToSite');
+    if (continueBtn) {
+        continueBtn.addEventListener('click', function() {
+            const mobilePhonesSection = document.getElementById('mobilePhonesSection');
+            if (mobilePhonesSection) {
+                mobilePhonesSection.style.opacity = '0';
+                
+                setTimeout(() => {
+                    mobilePhonesSection.style.display = 'none';
+                    
+                    if (document.querySelector('.hero')) {
+                        document.querySelector('.hero').style.display = 'flex';
+                    } else {
+                        const mainContent = document.getElementById('mainContent');
+                        if (mainContent) {
+                            mainContent.style.display = 'block';
+                        }
+                    }
+                    restoreScrolling();
+                }, 800);
+            }
+        });
+    }
 });
 
 // Initialize Event Listeners
@@ -227,7 +368,7 @@ function initializeEventListeners() {
         const dropdownContent = dropdown.querySelector('.dropdown-content');
         
         dropbtn.addEventListener('click', function(e) {
-            if (window.innerWidth <= 768) {
+            if (window.innerWidth <= 1300) {
                 e.preventDefault();
                 
                 // Close all other dropdowns
@@ -256,10 +397,10 @@ function initializeEventListeners() {
             }
         });
     });
-
+    
     // Close dropdown when clicking outside
     document.addEventListener('click', function(e) {
-        if (window.innerWidth <= 768) {
+        if (window.innerWidth <= 1300) {
             if (!e.target.closest('.dropdown')) {
                 dropdowns.forEach(dropdown => {
                     dropdown.classList.remove('active');
@@ -274,7 +415,7 @@ function initializeEventListeners() {
     // Mobile Menu Links
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
-            if (window.innerWidth <= 768 && !link.classList.contains('dropbtn')) {
+            if (window.innerWidth <= 1300 && !link.classList.contains('dropbtn')) {
                 hideMenu();
             }
         });
@@ -346,6 +487,10 @@ function updateActiveNavigation() {
 document.addEventListener('DOMContentLoaded', updateActiveNavigation);
 
 document.addEventListener('DOMContentLoaded', function() {
+    
+    initSwiperSliders();
+    initStatCounters();
+    initSupportChat();
     const carousel = {
         container: document.querySelector('.carousel-container'),
         slides: document.querySelectorAll('.carousel-slide'),
@@ -451,6 +596,7 @@ document.addEventListener('DOMContentLoaded', function() {
     carousel.init();
 });
 
+
 // Initialize EmailJS
 document.addEventListener('DOMContentLoaded', function() {
     emailjs.init('0-cIwNhrl7iIuLaUM');
@@ -535,6 +681,7 @@ function isValidEmail(email) {
 }
 
 // Product Inquiry Handler
+// /** @function inquireProduct - Used in HTML onclick attributes */
 function inquireProduct(productId) {
     const product = products.find(p => p.id === productId);
     if (product) {
@@ -542,6 +689,7 @@ function inquireProduct(productId) {
         window.location.href = `product-detail.html?id=${product.id}`;
     }
 }
+window.inquireProduct = inquireProduct;
 
 // Smooth Scroll Handler
 function handleSmoothScroll(e) {
@@ -560,6 +708,73 @@ function handleSmoothScroll(e) {
         });
     }
 }
+/**
+ * Initialize Swiper sliders
+ */
+function initSwiperSliders() {
+    // Only initialize if Swiper is loaded
+    if (typeof Swiper === 'undefined') return;
+    
+    // Testimonials slider
+    const testimonialSwiper = new Swiper('.swiper-testimonials', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        breakpoints: {
+            1300: {
+                slidesPerView: 2
+            },
+            1024: {
+                slidesPerView: 3
+            }
+        }
+    });
+}
+
+/**
+ * Initialize animated stat counters
+ */
+function initStatCounters() {
+    const counters = document.querySelectorAll('.stat-counter');
+    
+    counters.forEach(counter => {
+        const target = parseInt(counter.dataset.target);
+        
+        // Use Intersection Observer to start counting when visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    let count = 0;
+                    const duration = 2000; // 2 seconds
+                    const interval = duration / target;
+                    
+                    const timer = setInterval(() => {
+                        count++;
+                        counter.textContent = count;
+                        
+                        if (count >= target) {
+                            clearInterval(timer);
+                        }
+                    }, interval);
+                    
+                    // Unobserve after animation starts
+                    observer.unobserve(counter);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        observer.observe(counter);
+    });
+}
+
 
 // Window Resize Handler
 let resizeTimer;
@@ -569,7 +784,7 @@ window.addEventListener('resize', function() {
         const navLinks = document.getElementById("navLinks");
         const menuOverlay = document.querySelector(".menu-overlay");
         
-        if (window.innerWidth > 768) {
+        if (window.innerWidth > 1300) {
             // Reset menu for desktop view
             navLinks.style.right = "0";
             menuOverlay.style.display = "none";
