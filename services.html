@@ -5,119 +5,615 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Professional Kitchen Equipment</title>
     <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="services.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
+ <!-- Header -->
     <header>
         <nav>
             <div class="logo">
-                <img src="logo.png" alt="Company Logo">
+                <img src="./Images/gilli logo.webp" alt="Company Logo">
             </div>
-            <div class="nav-links" id="navLinks">
-                <i class="fas fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li>
-                        <a href="index.html" class="nav-icon" data-tooltip="Home">
-                            <i class="fas fa-home"></i>
-                            <span class="nav-text">Home</span>
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="Products.html" class="nav-icon dropbtn" data-tooltip="Products">
-                            <i class="fas fa-box"></i>
-                            <span class="nav-text">Products</span>
-                            <i class="fas fa-chevron-down mobile-arrow"></i>
-                        </a>
-                        <div class="dropdown-content">
-                            <a href="Products.html#cooking">Cooking Equipment</a>
-                            <a href="Products.html#refrigeration">Refrigeration</a>
-                            <a href="Products.html#preparation">Food Preparation</a>
-                            <a href="Products.html#washing">Washing Equipment</a>
-                            <a id="showAllProductsBtn">Show All Products</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="services.html" class="nav-icon" data-tooltip="Services">
-                            <i class="fas fa-cogs"></i>
-                            <span class="nav-text">Services</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="clients.html" class="nav-icon" data-tooltip="Clients">
-                            <i class="fas fa-users"></i>
-                            <span class="nav-text">Clients</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about.html" class="nav-icon" data-tooltip="About">
-                            <i class="fas fa-info-circle"></i>
-                            <span class="nav-text">About</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html" class="nav-icon" data-tooltip="Contact">
-                            <i class="fas fa-envelope"></i>
-                            <span class="nav-text">Contact</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <!-- Navigation -->
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li>
+                            <a href="index.html" class="nav-icon" data-tooltip="Home">
+                                <i class="fas fa-home"></i>
+                                <span class="nav-text">Home</span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="Products.html" class="nav-icon dropbtn" data-tooltip="Products">
+                                <i class="fas fa-box"></i>
+                                <span class="nav-text">Products</span>
+                                <i class="fas fa-chevron-down mobile-arrow"></i>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="#cooking">Cooking Equipment</a>
+                                <a href="#refrigeration">Refrigeration</a>
+                                <a href="#preparation">Food Preparation</a>
+                                <a href="#washing">Washing Equipment</a>
+                                <a id="showAllProductsBtn">Show All Products</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="services.html" class="nav-icon" data-tooltip="Services">
+                                <i class="fas fa-cogs"></i>
+                                <span class="nav-text">Services</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="clients.html" class="nav-icon" data-tooltip="Clients">
+                                <i class="fas fa-users"></i>
+                                <span class="nav-text">Clients</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="nav-icon" data-tooltip="About">
+                                <i class="fas fa-info-circle"></i>
+                                <span class="nav-text">About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="nav-icon" data-tooltip="Contact">
+                                <i class="fas fa-envelope"></i>
+                                <span class="nav-text">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             <i class="fas fa-bars" onclick="showMenu()"></i>
         </nav>
-        <div class="safety-banner">
-            <p>Our products are designed with chefs' safety in mind. Quality and safety for professional kitchens.</p>
-        </div>
     </header>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <!-- Add your services content here -->
+
+    <!-- Hero Section -->
+    <section class="services-hero">
+        <div class="services-hero-content">
+            <h1 data-aos="fade-up">Professional Kitchen Services</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Comprehensive solutions for your commercial kitchen needs</p>
+            <a href="#service-categories" class="btn-primary" data-aos="fade-up" data-aos-delay="400">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="service-overview">
+        <div class="container">
+            <div class="overview-content" data-aos="fade-right">
+                <h2>Complete Kitchen Solutions</h2>
+                <p>At Gilli Solutions, we provide comprehensive services for commercial kitchens of all sizes. From initial consultation and design to installation, maintenance, and emergency repairs, our team of certified technicians ensures your kitchen operates at peak efficiency.</p>
+                <div class="service-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="24">0</span>
+                        <span class="stat-label">Hour Support</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="98">0</span>
+                        <span class="stat-label">% Client Satisfaction</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="15">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+            <div class="overview-image" data-aos="fade-left">
+                <img src="./Images/IMG_5310.JPG" alt="Kitchen Service Technician">
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Categories -->
+    <section id="service-categories" class="service-categories">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+            <p class="section-subtitle" data-aos="fade-up">Comprehensive solutions for your commercial kitchen</p>
+            
+            <div class="service-tabs">
+                <div class="tab-navigation" data-aos="fade-up">
+                    <button class="tab-btn active" data-tab="installation">
+                        <i class="fas fa-tools"></i> Installation
+                    </button>
+                    <button class="tab-btn" data-tab="maintenance">
+                        <i class="fas fa-wrench"></i> Maintenance
+                    </button>
+                    <button class="tab-btn" data-tab="repair">
+                        <i class="fas fa-screwdriver"></i> Repair
+                    </button>
+                    <button class="tab-btn" data-tab="consultation">
+                        <i class="fas fa-clipboard-list"></i> Consultation
+                    </button>
+                </div>
+                
+                <div class="tab-content">
+                    <!-- Installation Tab -->
+                    <div id="installation" class="tab-pane active" data-aos="fade-up">
+                        <div class="service-detail">
+                            <div class="service-image">
+                                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Installation Service">
+                            </div>
+                            <div class="service-info">
+                                <h3>Professional Equipment Installation</h3>
+                                <p>Our certified technicians ensure proper installation of all kitchen equipment, from ovens and ranges to refrigeration systems and ventilation hoods. We handle everything from unboxing and assembly to positioning, connection, and testing.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> Certified installation technicians</li>
+                                    <li><i class="fas fa-check-circle"></i> Compliance with safety regulations</li>
+                                    <li><i class="fas fa-check-circle"></i> Proper utility connections</li>
+                                    <li><i class="fas fa-check-circle"></i> Equipment testing and calibration</li>
+                                    <li><i class="fas fa-check-circle"></i> Staff training on new equipment</li>
+                                </ul>
+                                <a href="#contact" class="btn-secondary">Request Installation</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Maintenance Tab -->
+                    <div id="maintenance" class="tab-pane" data-aos="fade-up">
+                        <div class="service-detail">
+                            <div class="service-image">
+                                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Maintenance Service">
+                            </div>
+                            <div class="service-info">
+                                <h3>Preventive Maintenance Programs</h3>
+                                <p>Regular maintenance extends equipment life and prevents costly breakdowns. Our maintenance programs include scheduled inspections, cleaning, part replacement, and performance optimization to keep your kitchen running smoothly.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> Customized maintenance schedules</li>
+                                    <li><i class="fas fa-check-circle"></i> Comprehensive equipment inspection</li>
+                                    <li><i class="fas fa-check-circle"></i> Deep cleaning of components</li>
+                                    <li><i class="fas fa-check-circle"></i> Performance testing and calibration</li>
+                                    <li><i class="fas fa-check-circle"></i> Detailed maintenance reports</li>
+                                </ul>
+                                <a href="#contact" class="btn-secondary">Schedule Maintenance</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Repair Tab -->
+                    <div id="repair" class="tab-pane" data-aos="fade-up">
+                        <div class="service-detail">
+                            <div class="service-image">
+                                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Repair Service">
+                            </div>
+                            <div class="service-info">
+                                <h3>Emergency Repair Services</h3>
+                                <p>When equipment fails, our rapid response team is available 24/7 to diagnose and repair issues quickly. We stock common replacement parts and have access to manufacturer-specific components to minimize downtime in your kitchen.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> 24/7 emergency response</li>
+                                    <li><i class="fas fa-check-circle"></i> Diagnostic expertise</li>
+                                    <li><i class="fas fa-check-circle"></i> Genuine replacement parts</li>
+                                    <li><i class="fas fa-check-circle"></i> Transparent pricing</li>
+                                    <li><i class="fas fa-check-circle"></i> Repair warranty</li>
+                                </ul>
+                                <a href="#contact" class="btn-secondary">Request Repair</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Consultation Tab -->
+                    <div id="consultation" class="tab-pane" data-aos="fade-up">
+                        <div class="service-detail">
+                            <div class="service-image">
+                                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Consultation Service">
+                            </div>
+                            <div class="service-info">
+                                <h3>Kitchen Design & Consultation</h3>
+                                <p>Our design experts help plan efficient kitchen layouts that maximize workflow and productivity. We consider space constraints, menu requirements, and budget to recommend the right equipment and configuration for your business.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> Workflow optimization</li>
+                                    <li><i class="fas fa-check-circle"></i> Equipment selection guidance</li>
+                                    <li><i class="fas fa-check-circle"></i> 3D kitchen visualization</li>
+                                    <li><i class="fas fa-check-circle"></i> Budget planning assistance</li>
+                                    <li><i class="fas fa-check-circle"></i> Energy efficiency recommendations</li>
+                                </ul>
+                                <a href="#contact" class="btn-secondary">Book Consultation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Process -->
+    <section class="service-process">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Service Process</h2>
+            <p class="section-subtitle" data-aos="fade-up">How we deliver exceptional service every time</p>
+            
+            <div class="process-timeline">
+                <div class="process-step" data-aos="fade-up">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Initial Assessment</h3>
+                        <p>We evaluate your kitchen needs and equipment requirements through on-site inspection or remote consultation.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Detailed Proposal</h3>
+                        <p>We provide a comprehensive service plan with transparent pricing and timeline for completion.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Service Execution</h3>
+                        <p>Our certified technicians perform the required service with minimal disruption to your operations.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Quality Assurance</h3>
+                        <p>We test all equipment after service to ensure optimal performance and safety compliance.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Follow-up Support</h3>
+                        <p>We provide ongoing support and recommendations to maintain equipment performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Plans -->
+    <section class="service-plans">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Service Plans</h2>
+            <p class="section-subtitle" data-aos="fade-up">Choose the right maintenance plan for your kitchen</p>
+            
+            <div class="plans-container">
+                <div class="plan-card" data-aos="fade-up">
+                    <div class="plan-header">
+                        <h3>Basic</h3>
+                        <div class="plan-price">
+                            <span class="price">\$199</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Quarterly maintenance visits</li>
+                            <li><i class="fas fa-check"></i> Basic equipment inspection</li>
+                            <li><i class="fas fa-check"></i> Phone support during business hours</li>
+                            <li><i class="fas fa-check"></i> 10% discount on repairs</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Emergency service</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Parts replacement</li>
+                        </ul>
+                    </div>
+                    <div class="plan-footer">
+                        <a href="#contact" class="btn-plan">Select Plan</a>
+                    </div>
+                </div>
+                
+                <div class="plan-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="plan-badge">Popular</div>
+                    <div class="plan-header">
+                        <h3>Standard</h3>
+                        <div class="plan-price">
+                            <span class="price">\$349</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Monthly maintenance visits</li>
+                            <li><i class="fas fa-check"></i> Comprehensive equipment inspection</li>
+                            <li><i class="fas fa-check"></i> 24/7 phone support</li>
+                            <li><i class="fas fa-check"></i> 20% discount on repairs</li>
+                            <li><i class="fas fa-check"></i> Priority emergency service</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Parts replacement</li>
+                        </ul>
+                    </div>
+                    <div class="plan-footer">
+                        <a href="#contact" class="btn-plan">Select Plan</a>
+                    </div>
+                </div>
+                
+                <div class="plan-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="plan-header">
+                        <h3>Premium</h3>
+                        <div class="plan-price">
+                            <span class="price">\$599</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Bi-weekly maintenance visits</li>
+                            <li><i class="fas fa-check"></i> Advanced equipment inspection</li>
+                            <li><i class="fas fa-check"></i> 24/7 dedicated support</li>
+                            <li><i class="fas fa-check"></i> 30% discount on repairs</li>
+                            <li><i class="fas fa-check"></i> Same-day emergency service</li>
+                            <li><i class="fas fa-check"></i> Basic parts replacement included</li>
+                        </ul>
+                    </div>
+                    <div class="plan-footer">
+                        <a href="#contact" class="btn-plan">Select Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">What Our Clients Say</h2>
+            
+            <div class="testimonial-slider" data-aos="fade-up">
+                <div class="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Their maintenance team has kept our kitchen running smoothly for years. Responsive, professional, and thorough in their work."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                            <div class="author-info">
+                                <h4>Michael Johnson</h4>
+                                <p>Executive Chef, The Grand Restaurant</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"When our freezer broke down during a busy weekend, their emergency team was on-site within an hour. Saved us thousands in potential food loss."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+                            <div class="author-info">
+                                <h4>Sarah Williams</h4>
+                                <p>Owner, Coastal Café</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The consultation service helped us design an efficient kitchen layout that increased our productivity by 30%. Worth every penny."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Client">
+                            <div class="author-info">
+                                <h4>David Chen</h4>
+                                <p>Operations Manager, Fusion Bistro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-controls">
+                    <button class="prev-btn" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots"></div>
+                    <button class="next-btn" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Frequently Asked Questions</h2>
+            
+            <div class="faq-container" data-aos="fade-up">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How quickly can you respond to emergency service calls?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For emergency service calls, our standard response time is within 4 hours. Premium service plan clients receive priority response, typically within 2 hours. In major metropolitan areas, we often achieve response times under 1 hour.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide service for all brands of kitchen equipment?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, our technicians are trained to service and repair equipment from all major manufacturers. We maintain relationships with suppliers to ensure we can source parts for virtually any commercial kitchen equipment brand.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is included in your maintenance service?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our maintenance service includes thorough inspection, cleaning of critical components, lubrication of moving parts, calibration of temperature controls, safety checks, and performance testing. We also provide a detailed report with recommendations for any necessary repairs or part replacements.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can you help with kitchen design for a new restaurant?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Our consultation services include kitchen layout design, equipment selection, workflow optimization, and budget planning. We can create 3D visualizations of your kitchen and provide detailed specifications for contractors. Our goal is to design a kitchen that maximizes efficiency while meeting your specific culinary needs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer warranties on repairs?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all our repair work comes with a 90-day warranty on both parts and labor. If the same issue recurs within the warranty period, we'll fix it at no additional cost. For certain major repairs, extended warranties may be available.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to optimize your kitchen operations?</h2>
+                <p>Contact our team today for a consultation or to schedule service</p>
+                <a href="#contact" class="btn-primary">Get Started</a>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <div class="contact-container">
-            <form id="contactForm">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Name" required>
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contact Us</h2>
+            <p class="section-subtitle" data-aos="fade-up">Reach out for service inquiries or to schedule maintenance</p>
+            
+            <div class="contact-container" data-aos="fade-up">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Needed</label>
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="installation">Installation</option>
+                            <option value="maintenance">Maintenance</option>
+                            <option value="repair">Repair</option>
+                            <option value="consultation">Consultation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your needs" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+                
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>+1 234 567 890</p>
+                            <p>Emergency: +1 234 567 999</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>service@gillisolutions.com</p>
+                            <p>support@gillisolutions.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Visit Us</h3>
+                            <p>123 Business Street, City, Country</p>
+                            <p>Mon-Fri: 8am - 6pm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Service Hours</h3>
+                            <p>Regular: Monday - Friday: 8am - 6pm</p>
+                            <p>Emergency: 24/7/365</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Email" required>
-                </div>
-                <div class="form-group">
-                    <input type="number" name="phone" placeholder="Phone" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="Message" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
-            <div class="contact-info">
-                <!-- ...existing code... -->
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <!-- ...existing code... -->
-        </div>
-        <div class="footer-bottom">
-            <!-- ...existing code... -->
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="products.html#cooking">Cooking Equipment</a></li>
+                        <li><a href="products.html#refrigeration">Refrigeration</a></li>
+                        <li><a href="products.html#preparation">Food Preparation</a></li>
+                        <li><a href="products.html#washing">Washing Equipment</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#installation">Installation</a></li>
+                        <li><a href="#maintenance">Maintenance</a></li>
+                        <li><a href="#repair">Repair</a></li>
+                        <li><a href="#consultation">Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Gilli Solutions. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
     <div class="menu-overlay"></div>
-    <script src="script.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        (function() {
-            emailjs.init('YOUR_USER_ID');
-        })();
-    </script>
+    <script type="module" src="script.js"></script>
+    <script src="service.js"></script>
 </body>
 </html>
