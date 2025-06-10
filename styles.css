@@ -34,18 +34,29 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #f9f9f9;
+    background-color:white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: x-large; /* Adjusted for desktop */
-    color: rgb(23, 22, 22);
+    color: rgb(230, 45, 45);
     z-index: 9999;
 }
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 5%;
+  object-fit: contain; /* Show the whole video */
+  z-index: -1;
+  background-color: white; /* Optional: Fill empty areas */
+}
 .loading-screen h6 {
-    color: rgb(17, 18, 17);
-    font-size: small; /* Adjusted for desktop */
-    margin-top: 50px;
+    color:lightgreen;
+    margin-top: 50%;
+    font-size: x-small; /* Adjusted for desktop */
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
@@ -559,6 +570,15 @@ section h2 {
     opacity: 1;
 }
 
+.carousel-slide video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
 .carousel-slide img {
     position: absolute;
     top: 0;
@@ -813,7 +833,7 @@ button[type="submit"]:hover {
 
 .contact-info div {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
     margin-bottom: 20px;
 }
@@ -879,7 +899,7 @@ button[type="submit"]:hover {
 
 .contact-info div {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
     margin-bottom: 20px;
 }
@@ -1106,16 +1126,16 @@ social-links a:hover {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #faf4f4;
+        background-color: rgb(167, 167, 167);
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: x-small; /* Adjusted for mobile */
-        color: rgb(19, 18, 18);
+        color: rgb(230, 45, 45);
         z-index: 9999;
     }
     .loading-screen h6 {
-        color: rgb(20, 20, 20);
+        color:lightgreen;
         font-size: small; /* Adjusted for mobile */
         font-weight: bold;
         text-align: center;
@@ -1126,6 +1146,18 @@ social-links a:hover {
         animation: fadeIn 1.5s ease-out;
         width: 100px;
     }
+     #bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 5%;
+    object-fit: contain; /* Don't crop */
+    z-index: -1;
+    background-color: black;
+    transform: translate(-50%, -50%) scale(1.25); /* 25% bigger */
+}
     .logo-container {
         display: flex;
         justify-content: center;
@@ -1175,7 +1207,9 @@ social-links a:hover {
     .dropdown.active .mobile-arrow {
         transform: rotate(180deg);
     }
-
+    .logo-container img{
+        width: 500px;
+    }
     .dropdown-content {
         position: static;
         background: #f9f9f9;

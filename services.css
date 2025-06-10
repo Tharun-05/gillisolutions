@@ -84,6 +84,7 @@
     background-size: cover;
     background-position: center;
     color: white;
+    margin-top: 5%;
     text-align: center;
     padding: 150px 20px;
     position: relative;
@@ -686,11 +687,6 @@
 }
 
 /* Contact Section */
-.contact {
-    padding: 100px 0;
-    background-color: white;
-}
-
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -698,33 +694,17 @@
 }
 
 .form-group {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
-
-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: var(--dark-color);
+.contact h2{
+    text-align: center;
 }
-
-input, textarea, select {
+input, textarea {
     width: 100%;
-    padding: 12px 15px;
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius);
-    font-size: 1rem;
-    transition: var(--transition);
-}
-
-input:focus, textarea:focus, select:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(77, 184, 255, 0.2);
-}
-
-input.error, textarea.error, select.error {
-    border-color: var(--secondary-color);
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 textarea {
@@ -732,52 +712,34 @@ textarea {
     resize: vertical;
 }
 
-.btn-submit {
+button[type="submit"] {
     width: 100%;
-    padding: 14px;
-    background-color: var(--primary-color);
+    padding: 12px;
+    background: #4db8ff;
     color: white;
     border: none;
-    border-radius: var(--border-radius);
-    font-size: 1rem;
-    font-weight: 600;
+    border-radius: 5px;
     cursor: pointer;
-    transition: var(--transition);
+    font-size: 16px;
+    transition: background 0.3s;
 }
 
-.btn-submit:hover {
-    background-color: #3a9ad9;
+button[type="submit"]:hover {
+    background: #ff3333;
 }
 
-.contact-info {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-}
-
-.contact-info-item {
+.contact-info div {
     display: flex;
     align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
-.contact-info-item i {
-    font-size: 1.8rem;
-    color: var(--primary-color);
-    margin-right: 20px;
-    margin-top: 5px;
+.contact-info i {
+    font-size: 24px;
+    color: #4db8ff;
 }
 
-.contact-info-item h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: var(--dark-color);
-}
-
-.contact-info-item p {
-    font-size: 1rem;
-    color: var(--text-color);
-    margin-bottom: 5px;
-}
 
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
