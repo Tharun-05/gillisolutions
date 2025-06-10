@@ -528,15 +528,15 @@ function processMessage(message) {
     
     // Open chat automatically after delay (uncomment to enable)
     
-    setTimeout(() => {
-        if (!supportChat.classList.contains('open')) {
-            supportChat.classList.add('open');
+    // setTimeout(() => {
+    //     if (!supportChat.classList.contains('open')) {
+    //         supportChat.classList.add('open');
             
-            // // Add initial bot message
-            // setTimeout(() => {
-            //     addMessage('bot', "Hello! 👋 I'm your kitchen equipment assistant. How can I help you today?");
-            // }, 500);
-        }
-    }, 8000);
+    //         // // Add initial bot message
+    //         // setTimeout(() => {
+    //         //     addMessage('bot', "Hello! 👋 I'm your kitchen equipment assistant. How can I help you today?");
+    //         // }, 500);
+    //     }
+    // }, 8000);
     
 }

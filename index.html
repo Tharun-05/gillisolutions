@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Kitchen Equipment</title>
+    <title>Professional Kitchen Ventilation</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="contact.css"> 
@@ -26,7 +26,6 @@
 <body>
     <!-- Header -->
     <header>
-        
         <nav>
             <div class="logo">
                 <img src="./Images/gilli logo.webp" alt="Company Logo">
@@ -36,7 +35,7 @@
                     <i class="fas fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li>
-                            <a href="#home" class="nav-icon" data-tooltip="Home">
+                            <a href="home.html" class="nav-icon" data-tooltip="Home">
                                 <i class="fas fa-home"></i>
                                 <span class="nav-text">Home</span>
                             </a>
@@ -83,9 +82,6 @@
                 </div>
             <i class="fas fa-bars" onclick="showMenu()"></i>
         </nav>
-        <!-- <div class="safety-banner">
-            <p>Our products are designed with chefs' safety in mind. Quality and safety for professional kitchens.</p>
-        </div> -->
     </header>
 
     <!-- Hero Section -->
@@ -93,24 +89,27 @@
     <section class="hero" id="home">
         <div class="carousel-container">
             <div class="carousel-slide">
-                <img src="./Images/home.jpeg" alt="Kitchen Equipment 1">
+                 <video controls autoplay muted loop>
+                    <source src="./Images/Entry.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
                 <div class="slide-content">
-                    <h1>Professional Kitchen Equipment Solutions</h1>
-                    <p>Quality equipment for commercial kitchens</p>
+                    <h1>Professional Kitchen Ventilation Solutions</h1>
+                    <p>12+ Years of Experienced Engineers</p>
                 </div>
             </div>
             <div class="carousel-slide">
-                <img src="https://www.armaghi.com/wp-content/uploads/2020/04/SRC-12-1000x600.jpg" alt="Kitchen Equipment 2">
+                <img src="./Images/Entry-slide2.jpeg" alt="Kitchen Equipment 2">
                 <div class="slide-content">
-                    <h1>Industrial Grade Exhaust Systems</h1>
-                    <p>Advanced ventilation solutions for your kitchen</p>
+                    <h1>Commercial Kitchen Setup</h1>
+                    <p>Your One-Stop Kitchen Partner — Complete Solutions from Layout to Launch..</p>
                 </div>
             </div>
             <div class="carousel-slide">
-                <img src="https://i.pinimg.com/originals/51/ea/d8/51ead852ff3d065b03a9d4398db3cccb.jpg" alt="Kitchen Equipment 3">
+                <img src="./Images/Entry-slide3.JPG" alt="Kitchen Equipment 3">
                 <div class="slide-content">
-                    <h1>Custom Kitchen Solutions</h1>
-                    <p>Tailored to your specific needs</p>
+                    <h1>Built for Chefs, Designed for Environment</h1>
+                    <p>Engineered for Efficiency. Committed to Clean Air.</p>
                 </div>
             </div>
             
@@ -210,8 +209,12 @@
 
     <div id="loadingScreen" class="loading-screen">
         <div class="logo-container">
-            <!-- <img src="https://gillisolutions.com/sites/default/files/Logo-gillisolutions_v3.png" alt="Netflix Logo" id="logo" /> -->
-            <h1 id="logo">Gilli Solutions <h6><em>--Living clean</em></h6> </h1>
+            <!-- <img src="./Images/gilli logo.webp" alt="Netflix Logo" id="logo" /> -->
+            <video autoplay muted loop playsinline id="bg-video">
+                <source src="./Images/logo-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- <h1 id="logo">Gilli Solutions <h6><em>Living clean</em></h6> </h1> -->
         </div>
     </div>
 
@@ -219,47 +222,86 @@
     <section class="contact" id="contact">
         <h2>Contact Us</h2>
         <div class="contact-container">
-            <form id="contactForm" action="http://localhost:5000/contact" method="POST">
-                <div class="form-group">
-                    <input type="text" placeholder="Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Email" required>
-                </div>
-                <div class="form-group">
-                    <input type="number" placeholder="Phone" required>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Message" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
+            <div>
+            <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="contact-form">
+                        <input type="hidden" name="access_key" value="bc1c1a86-4322-4d5b-ab17-55346558ef3a">
+                        <input type="hidden" name="subject" value="New Contact Form Submission - Kitchen Equipment">
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="inquiry">Inquiry Type</label>
+                                <select id="inquiry" name="inquiry" required>
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="product">Product Information</option>
+                                    <option value="service">Service Request</option>
+                                    <option value="quote">Request a Quote</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your requirements" required></textarea>
+                        </div>
+                        
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I agree to the processing of my personal data in accordance with the <a href="#">Privacy Policy</a></label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+            </div>
             <div class="contact-info">
                 <div class="contact-info-item">
                     <i class="fas fa-phone"></i>
                     <div>
-                        <p>+1 234 567 890</p>
+                        <p>+91 9482562738 / 9611655968</p>
                     </div>
                 </div>
                 
                 <div class="contact-info-item">
                     <i class="fas fa-envelope"></i>
                     <div>
-                        <p>info@kitchenequip.com</p>
+                        <p>gillisolutions@gmail.com</p>
                     </div>
                 </div>
                 
                 <div class="contact-info-item">
                     <i class="fas fa-map-marker-alt"></i>
                     <div>
-                        <p>123 Business Street, City, Country</p>
+                        <p># 89, Duggalama Temple, Peenya Industrial Area, 
+                                3rd Phase, Bengaluru-560058</p>
                     </div>
                 </div>
                 
                 <div class="contact-info-item">
                     <i class="fas fa-clock"></i>
                     <div>
-                        <p>Monday - Friday: 9am - 5pm</p>
+                        <p>Monday - Saturday: 9am - 5pm</p>
                     </div>
                 </div>
             </div>
@@ -273,8 +315,8 @@
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
@@ -284,10 +326,10 @@
                 <div class="footer-column">
                     <h3>Products</h3>
                     <ul class="footer-links">
-                        <li><a href="products.html#cooking">Cooking Equipment</a></li>
-                        <li><a href="products.html#refrigeration">Refrigeration</a></li>
-                        <li><a href="products.html#preparation">Food Preparation</a></li>
-                        <li><a href="products.html#washing">Washing Equipment</a></li>
+                        <li><a href="Products.html#cooking">Cooking Equipment</a></li>
+                        <li><a href="Products.html#refrigeration">Refrigeration</a></li>
+                        <li><a href="Products.html#preparation">Food Preparation</a></li>
+                        <li><a href="Products.html#washing">Washing Equipment</a></li>
                     </ul>
                 </div>
                 
@@ -321,7 +363,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2023 Professional Kitchen Equipment. All rights reserved.</p>
+                <p>&copy; 2025 Professional Kitchen Equipment. All rights reserved.</p>
             </div>
         </div>
     </footer>

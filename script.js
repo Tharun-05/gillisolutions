@@ -316,7 +316,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             document.body.style.overflow = 'auto';
         }
-    }, 3000); // 3 seconds delay after loading screen
+    }, 3400); // 3 seconds delay after loading screen
 });
 // Function to restore scrolling - add this to your script.js file
 function restoreScrolling() {
@@ -499,7 +499,7 @@ document.addEventListener('DOMContentLoaded', function() {
         dotsContainer: document.querySelector('.carousel-dots'),
         currentSlide: 0,
         interval: null,
-        autoPlayDuration: 5000, // 5 seconds per slide
+        autoPlayDuration: 10000, // 5 seconds per slide
 
         init() {
             // Create dots
