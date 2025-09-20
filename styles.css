@@ -570,13 +570,16 @@ section h2 {
     opacity: 1;
 }
 
-.carousel-slide video{
+.carousel-slide video {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+    background-color: black;
+    display: block;
 }
 
 .carousel-slide img {
@@ -982,109 +985,10 @@ social-links a:hover {
 }
 
 /* Hide "Show All Products" button on desktop */
-#showAllProductsBtn {
+/* #showAllProductsBtn {
     display: none;
-}
-/* ...existing code... */
-
-/* Door Animation Container */
-.door-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f5f5;
-    z-index: 9998;
-    overflow: hidden;
-}
-
-/* Number 7 Styling */
-.number-container {
-    position: relative;
-    z-index: 9999;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.big-number {
-    font-size: 300px;
-    font-weight: bold;
-    color: #f0ff4d;
-    text-shadow: 3px 3px 8px rgba(0,0,0,0.2);
-    transition: all 1.0s ease;
-}
-
-.big-number:hover {
-    transform: scale(1.1);
-    text-shadow: 5px 5px 15px rgba(0,0,0,0.3);
-}
-
-
-.continue-button {
-    margin-top: 40px;
-}
-
-.continue-button button {
-    background-color: #4db8ff;
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    font-size: 18px;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.continue-button button:hover {
-    background-color: #3aa0e9;
-    transform: scale(1.05);
-}
-
-/* Responsive adjustments for mobile phones section */
-/* @media screen and (max-width: 768px) {
-    .mobile-container {
-        flex-direction: column;
-    }
-    
-    .mobile-phone {
-        width: 220px;
-        padding: 15px;
-        margin-bottom: 20px;
-    }
-    
-    .phone-device {
-        height: 240px;
-        width: 120px;
-    }
 } */
 
-/* Responsive adjustments for mobile phones section */
-/* @media screen and (max-width: 768px) {
-    .mobile-container {
-        flex-direction: column;
-    }
-    
-    .mobile-phone {
-        width: 90%;
-        max-width: 350px;
-    }
-} */
-/* Responsive styling for doors
-@media screen and (max-width: 768px) {
-    .big-number {
-        font-size: 100px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .big-number {
-        font-size: 80px;
-    }
-} */
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .nav-links {
@@ -1316,6 +1220,15 @@ social-links a:hover {
         width: 35px;
         height: 35px;
     }
+}
+
+/* iOS Safari Fix */
+@supports (-webkit-touch-callout: none) {
+  .carousel-slide video {
+    height: 100%;
+    min-height: 100vh;
+    object-fit: fill;
+  }
 }
 
 @media screen and (min-width: 769px) {
