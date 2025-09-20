@@ -3,34 +3,44 @@ import {initSupportChat} from "./support_chat.js";
 const products = [
     {
         id: 1,
-        name: "Commercial Oven",
-        category: "cooking",
-        description: "High-capacity commercial oven for professional kitchens",
-        image: "https://static.wixstatic.com/media/fd9026_2278803b508a4a38b4b8dc730540d246~mv2.jpg/v1/fill/w_1000,h_1000,al_c,q_85/fd9026_2278803b508a4a38b4b8dc730540d246~mv2.jpg",
+        name: "Commercial Kitchen Hoods",
+        category: "Commercial_Kitchen_Ventilation_Systems",
+        description: "A commercial kitchen hood is a ventilation device designed to remove heat, smoke, grease-laden vapors, and odors from the cooking area in commercial kitchens.",
+        image: "https://www.commercial-kitchenequipments.com/photo/ps1831771-eh_115_silver_commercial_stainless_steel_exhaust_hood_with_filter_for_kitchen.jpg",
         price: "$2,999",
-        longDescription: "This is a commercial oven with high capacity, ideal for professional kitchens...Commercial convection ovens are versatile appliances that can be used for a variety of cooking tasks. They are designed to circulate hot air around food, cooking it quickly and evenly. This means that you can cook a variety of dishes at the same time, without worrying about uneven cooking or burnt edges.",
+        longDescription: "Commercial kitchen hoods are an essential component of any professional kitchen ventilation system. They capture and remove smoke, steam, grease particles, and unwanted odors generated during cooking. Constructed from durable stainless steel, they are designed for high-performance air extraction and long-term use in demanding foodservice environments. Most hoods are equipped with easy-to-clean baffle filters, integrated lighting for better visibility, and are available in various sizes and airflow capacities to suit different kitchen layouts. Proper installation of a commercial kitchen hood ensures compliance with fire safety and hygiene regulations while improving indoor air quality and comfort for kitchen staff.",
         specifications: [
-            "Capacity: 30 Liters",
-            "Energy Efficiency: A+",
-            "Warranty: 2 Years"
+            "Type:Wall-mounted, island, or low-profile hoods",
+            "Material:Stainless steel (18-gauge or 20-gauge)",
+            "Airflow Capacity: 500–2500 CFM (cubic feet per minute)",
+            "Stainless steel (18-gauge or 20-gauge)",
+            "Lighting: Integrated LED lighting",
+            "Ducting: Compatible with ducted or ductless configurations",
+            "Compliance: NSF, UL, and NFPA 96 standards",
+            "Noise Level: 65–75 dB"
         ],
-        reviews: [
-            "Great product! Worth every penny.",
-            "Perfect for my restaurant's kitchen."
-        ]
+        // reviews: [
+        //     "Great product! Worth every penny.",
+        //     "Perfect for my restaurant's kitchen."
+        // ]
     },
     {
         id: 2,
-        name: "Industrial Mixer",
-        category: "preparation",
-        description: "Heavy-duty mixer for large-scale food preparation",
-        image: "https://5.imimg.com/data5/ZQ/HF/BH/SELLER-37087478/commercial-mixer-machine-1000x1000.jpg",
+        name: "Commercial Exhaust Ducting",
+        category: "Commercial_Kitchen_Ventilation_Systems",
+        description: "Commercial exhaust ducting is a network of ducts used to transport contaminated air, smoke, grease-laden vapors, and odors from kitchen hoods to the exterior of the building.",
+        image: "https://tse3.mm.bing.net/th/id/OIP.jgY9wKBCvUyR602Hfzej1gHaEK?rs=1&pid=ImgDetMain&o=7&rm=3",
         price: "$1,499",
-        longDescription: "This industrial mixer can handle large batches of dough, batter, and more...",
+        longDescription: "Commercial exhaust ducting is an integral part of professional kitchen ventilation systems, connecting kitchen hoods to exhaust fans while safely removing smoke, heat, and airborne grease. Constructed from heavy-duty galvanized or stainless steel, these ducts are designed to withstand high temperatures and corrosive kitchen environments. They are sealed and insulated to prevent leaks and meet strict fire safety regulations, including NFPA 96 standards. Properly designed and installed exhaust ducting ensures efficient airflow, minimizes fire hazards, and contributes to a cleaner and safer kitchen environment.",
         specifications: [
-            "Capacity: 50 Liters",
-            "Motor Power: 2000W",
-            "Warranty: 3 Years"
+            "Material: Galvanized steel, stainless steel (16–20 gauge)",
+            "Shape: Round or rectangular",
+            "Diameter/Size: 8” to 24” (customizable based on airflow)",
+            "Sealing: Welded or flanged joints for airtight performance",
+            "Fire Rating: NFPA 96 compliant for grease ducting",
+            "Insulation: High-temperature insulation available for fire protection",
+            "Length: Custom lengths to match kitchen layout",
+            "Mounting: Horizontal or vertical installationS"
         ],
         reviews: [
             "Excellent performance, super strong motor.",
@@ -39,16 +49,22 @@ const products = [
     },
     {
         id: 3,
-        name: "Industrial Mixer",
-        category: "preparation",
-        description: "Heavy-duty mixer for large-scale food preparation",
-        image: "https://static.grainger.com/rp/s/is/image/Grainger/46E338_AS01?$adapimg$&hei=1072&wid=1072",
+        name: "Centrifugal Blowers",
+        category: "Commercial_Kitchen_Ventilation_Systems",
+        description: "They provide the necessary airflow to exhaust contaminated air, smoke, and grease vapors from hoods and ducts, ensuring a clean and safe kitchen environment.",
+        image: "https://img-new.cgtrader.com/items/943730/28829c9894/large/industrial-centrifugal-blower-fan-animated-3d-model-animated-max-obj-fbx-3dm-mtl.jpg",
         price: "$1,499",
-        longDescription: "This industrial mixer can handle large batches of dough, batter, and more This industrial mixer can handle large batches of dough ",
+        longDescription: "Centrifugal blowers are critical components in commercial kitchen exhaust systems, delivering powerful airflow to remove heat, smoke, and airborne grease particles. Their forward-curved or backward-inclined blades provide high efficiency and quiet operation, even in demanding ventilation setups. These blowers are available in various configurations, including direct-drive and belt-drive, to suit different kitchen sizes and duct layouts. Designed with durable materials and corrosion-resistant finishes, centrifugal blowers ensure long-term reliability and compliance with commercial kitchen ventilation standards. Their high static pressure capacity makes them ideal for systems with extended ductwork and heavy-duty ventilation needs.",
         specifications: [
-            "Capacity: 50 Liters",
-            "Motor Power: 2000W",
-            "Warranty: 3 Years"
+            "Type: Single inlet or double inlet centrifugal blower",
+            "Material: Galvanized steel or aluminum housing with steel impellers",
+            "Airflow Capacity: 500 – 10,000 CFM",
+            "Motor: Direct-drive or belt-drive",
+            "Speed: Variable speed options available",
+            "Noise Level: Low noise operation (55–75 dB)",
+            "Mounting: Roof-mounted or wall-mounted configurations",
+            "Efficiency: High static pressure handling for long duct runs",
+            "Compliance: UL and AMCA certified"
         ],
         reviews: [
             "Excellent performance, super strong motor.",
@@ -57,16 +73,91 @@ const products = [
     },
     {
         id: 4,
-        name: "Industrial Mixer",
-        category: "preparation",
-        description: "Heavy-duty mixer for large-scale food preparation",
-        image: "https://static.grainger.com/rp/s/is/image/Grainger/46E338_AS01?$adapimg$&hei=1072&wid=1072",
+        name: "Commercial Hood Filters",
+        category: "Commercial_Kitchen_Ventilation_Systems",
+        description: "Designed to trap grease, smoke, and airborne particles generated during cooking.",
+        image: "https://m.media-amazon.com/images/I/510ggsd2CkL._AC_SL1500_.jpg",
         price: "$1,499",
-        longDescription: "This industrial mixer can handle large batches of dough, batter, and more...",
+        longDescription: "Commercial hood filters play a vital role in kitchen ventilation systems by capturing grease-laden vapors before they enter the exhaust ducts. Stainless steel baffle filters are widely used for their superior durability, fire safety compliance, and ease of cleaning. Their angled baffle design allows efficient grease separation while maintaining airflow performance. These filters are NSF-approved, making them safe for foodservice applications, and are fully dishwasher-safe for quick maintenance. By using high-quality hood filters, commercial kitchens can significantly reduce fire risks, extend the life of exhaust ducting and fans, and ensure regulatory compliance with ventilation safety standards.",
         specifications: [
-            "Capacity: 50 Liters",
-            "Motor Power: 2000W",
-            "Warranty: 3 Years"
+            "Type: Baffle filters or mesh filters (preferred: stainless steel baffle)",
+            "Material: Stainless steel or aluminum (heavy-duty, corrosion-resistant)",
+            "Size: Standard sizes (10'x20', 16'x20', 20'x20') or custom sizes",
+            "Construction: Welded or riveted frames with handles for easy removal",
+            "Efficiency: High grease-trapping efficiency with low airflow restriction",
+            "Cleaning: Dishwasher-safe and reusable",
+            "Compliance: NSF-certified and UL-listed (grease-rated)",
+            "Operating Temperature: Up to 400°F (204°C)"
+        ],
+        reviews: [
+            "Excellent performance, super strong motor.",
+            "Handles heavy-duty tasks with ease."
+        ]
+    },
+    {
+        id: 5,
+        name: "Dampers",
+        category: "Commercial_Kitchen_Ventilation_Systems",
+        description: "They help balance air distribution, improve energy efficiency, and maintain proper ventilation pressure.",
+        image: "https://airmasteremirates.com/wp-content/uploads/2016/02/GI-Volume-Control-Damper-1.jpg",
+        price: "$1,499",
+        longDescription: "Ducting dampers are crucial for maintaining airflow control and efficiency in commercial kitchen ventilation systems. They allow precise adjustment of exhaust and supply air, helping maintain balanced pressure within the kitchen. Motorized dampers can be integrated with building automation systems for automatic operation, while manual dampers provide simple and cost-effective control. Backdraft dampers are used to prevent reverse airflow when the system is off. Constructed from heavy-duty galvanized or stainless steel, these dampers are durable, fire-code compliant, and designed for continuous operation in demanding kitchen environments. Proper damper use ensures improved indoor air quality, energy efficiency, and compliance with ventilation safety standards.",
+        specifications: [
+            "Type: Manual, motorized (automatic), or backdraft dampers",
+            "Material: Galvanized steel or stainless steel",
+            "Size: 4” to 24” diameter (round) or rectangular sizes (custom available)",
+            "Operation: Lever-operated (manual) or actuator-controlled (motorized)",
+            "Sealing: Airtight with gasketed blades for leakage prevention",
+            "Temperature Rating: Up to 250°F (121°C) for standard dampers",
+            "Compliance: AMCA-certified and NFPA 96 compatible (for grease exhaust systems)",
+            "Installation: Horizontal or vertical duct mounting"
+        ],
+        reviews: [
+            "Excellent performance, super strong motor.",
+            "Handles heavy-duty tasks with ease."
+        ]
+    },
+    {
+        id: 6,
+        name: "Silencers",
+        category: "Commercial_Kitchen_Ventilation_Systems",
+        description: "They help maintain a quieter kitchen environment while ensuring efficient airflow.",
+        image: "https://www.mdpi.com/applsci/applsci-13-04426/article_deploy/html/images/applsci-13-04426-g005-550.jpg",
+        price: "$1,499",
+        longDescription: "Silencers for blowers are essential components in commercial kitchen ventilation systems where noise control is a priority. They are designed to absorb and attenuate the sound produced by exhaust and makeup air blowers, reducing the noise transmitted through ducts. Constructed from heavy-duty galvanized or stainless steel with internal acoustic insulation, these silencers maintain high airflow performance without causing significant pressure drops. They are available in various sizes and configurations to suit different ventilation designs. By installing silencers, commercial kitchens can create a more comfortable working environment, comply with noise control regulations, and maintain optimal ventilation efficiency.",
+        specifications: [
+            "Type: Rectangular or cylindrical duct silencers",
+            "Material: Galvanized steel or stainless-steel casing",
+            "Internal Lining: Acoustic insulation with perforated metal liner",
+            "Noise Reduction: 20–40 dB (varies by model and design)",
+            "Airflow Capacity: Compatible with high-volume ventilation systems",
+            "Temperature Rating: Up to 250°F (121°C)",
+            "Length: Typically, 3–10 feet (custom options available)",
+            "Compliance: AMCA and ASHRAE standards for sound control",
+            "Installation: Horizontal or vertical duct mounting"
+        ],
+        reviews: [
+            "Excellent performance, super strong motor.",
+            "Handles heavy-duty tasks with ease."
+        ]
+    },
+    {
+        id: 7,
+        name: "Collar For Fresh Air",
+        category: "Commercial_Kitchen_Ventilation_&_HVAC_Accessories",
+        description: "They help secure air distribution components and ensure airtight connections for efficient airflow in fresh air supply systems.",
+        image: "https://tse1.mm.bing.net/th/id/OIP.TANRma-tuKETlCmsosk23AHaG1?rs=1&pid=ImgDetMain&o=7&rm=3",
+        price: "$1,499",
+        longDescription: "Collars used in fresh air systems serve as connection interfaces between ducts, diffusers, and plenums in commercial ventilation setups. They ensure secure and leak-proof transitions, improving the efficiency of air delivery. Available in both round and rectangular shapes, these collars are typically manufactured from galvanized or stainless steel for durability and resistance to corrosion. Many models include gaskets or pre-applied sealants for airtight performance. By using properly sized collars, fresh air systems achieve better airflow distribution, reduced energy loss, and compliance with ventilation standards.",
+        specifications: [
+            "Type: Round or rectangular duct collars",
+            "Material: Galvanized steel, stainless steel, or aluminium",
+            "Size Range: 4” to 24” (round) or custom rectangular sizes",
+            "Connection: Slip-in or flange-mounted design",
+            "Sealing: Equipped with gaskets or sealants to prevent air leakage",
+            "Finish: Corrosion-resistant coating (zinc-coated or powder-coated)",
+            "Temperature Range: Suitable for standard HVAC and commercial kitchen environments",
+            "Compliance: SMACNA standards for duct fittings"
         ],
         reviews: [
             "Excellent performance, super strong motor.",
@@ -306,7 +397,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     }, 1500); // Match this with door animation duration
                 });
             }
-        } else {
+        } 
+        else {
             // Fallback if door animation isn't implemented
             const mainContent = document.getElementById('mainContent');
             if (mainContent) {
@@ -316,7 +408,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             document.body.style.overflow = 'auto';
         }
-    }, 3400); // 3 seconds delay after loading screen
+    }, 3000); // 3 seconds delay after loading screen
 });
 // Function to restore scrolling - add this to your script.js file
 function restoreScrolling() {
@@ -350,6 +442,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
 
 // Initialize Event Listeners
 function initializeEventListeners() {
@@ -516,8 +609,8 @@ document.addEventListener('DOMContentLoaded', function() {
             this.startAutoPlay();
             
             // Pause autoplay on hover
-            this.container.addEventListener('mouseenter', () => this.stopAutoPlay());
-            this.container.addEventListener('mouseleave', () => this.startAutoPlay());
+            // this.container.addEventListener('mouseenter', () => this.stopAutoPlay());
+            // this.container.addEventListener('mouseleave', () => this.startAutoPlay());
             
             // Touch events for mobile
             this.setupTouchEvents();
@@ -534,14 +627,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
         showSlide(index) {
             // Remove active class from all slides and dots
-            this.slides.forEach(slide => slide.classList.remove('active'));
+            this.slides.forEach(slide => {
+                slide.classList.remove('active');
+
+                // Pause and reset any videos in all slides
+                const video = slide.querySelector('video');
+                if (video) {
+                    video.pause();
+                    video.currentTime = 0;
+                }
+            });
+            
+            const videoSlide = document.querySelector('#video-slide video');
+            if (videoSlide) {
+                videoSlide.addEventListener('ended', () => {
+                    carousel.nextSlide();
+                });
+            }
+
             const dots = this.dotsContainer.querySelectorAll('.dot');
             dots.forEach(dot => dot.classList.remove('active'));
-            
+
             // Add active class to current slide and dot
             this.currentSlide = index;
-            this.slides[index].classList.add('active');
+            const currentSlideElement = this.slides[index];
+            currentSlideElement.classList.add('active');
             dots[index].classList.add('active');
+
+            // Play video if present in the current slide
+            const activeVideo = currentSlideElement.querySelector('video');
+            if (activeVideo) {
+                activeVideo.play();
+            }
         },
 
         nextSlide() {

@@ -80,7 +80,7 @@
 
 /* Hero Section */
 .services-hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://media.istockphoto.com/id/1347513136/photo/kitchen-hood-cleaning.jpg?s=612x612&w=0&k=20&c=F9b4OEuUSRDFpDabUAYmq3XBBBwCUvzWg42syImSBQI=');
     background-size: cover;
     background-position: center;
     color: white;
@@ -667,7 +667,7 @@
 /* CTA Section */
 .cta-section {
     padding: 80px 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://media.istockphoto.com/id/1449091460/photo/woman-installing-new-hood-filter-at-kitchen.jpg?s=612x612&w=0&k=20&c=SxYxtfx7LDM7co8Mwq0bDCPFkGK_lF2IozBvZ5yypno=');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

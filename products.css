@@ -9,24 +9,26 @@ section h2 {
     font-size: 2.5em;
 }
 
+/* Optional: Force consistent card height across grid */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     padding: 20px 0;
-    justify-content: center;
+    align-items: stretch; /* Ensures all items in a row stretch to the same height */
 }
 
 .product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 400px;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
     background: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 400px;
+    height: 100%;
 }
 
 .product-card:hover {
@@ -34,15 +36,20 @@ section h2 {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+/* Image */
 .product-card img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 200px;
+    object-fit: fill;
+    flex-shrink: 0;
 }
 
+/* Content wrapper fills available space */
 .product-info {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
+    padding: 20px;
 }
 
 .product-info h3 {
@@ -52,7 +59,7 @@ section h2 {
 
 .product-info p {
     color: #666;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .product-info .price {
@@ -60,10 +67,12 @@ section h2 {
     font-weight: bold;
     font-size: 1.2em;
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
+/* Push button to the bottom */
 .product-info button {
+    margin-top: auto; /* Pushes the button to the bottom */
     width: 100%;
     padding: 10px;
     background: #4db8ff;
