@@ -138,40 +138,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         // Form submission
-        const contactForm = document.getElementById('contactForm');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Basic form validation
-                const formData = new FormData(this);
-                let isValid = true;
-                
-                for (const [key, value] of formData.entries()) {
-                    if (!value.trim()) {
-                        isValid = false;
-                        const input = document.getElementById(key);
-                        input.classList.add('error');
-                    }
-                }
-                
-                if (isValid) {
-                    // Form is valid, you can submit it or handle with EmailJS
-                    const submitBtn = this.querySelector('.btn-submit');
-                    const originalText = submitBtn.textContent;
-                    
-                    submitBtn.disabled = true;
-                    submitBtn.textContent = 'Sending...';
-                    
-                    // Simulate form submission (replace with actual EmailJS code)
-                    setTimeout(() => {
-                        alert('Thank you! Your message has been sent. We will contact you shortly.');
-                        contactForm.reset();
-                        submitBtn.disabled = false;
-                        submitBtn.textContent = originalText;
-                    }, 1500);
-                }
-            });
+        // Form submission handling
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            // Form validation can be added here if needed
+            
+            // Show loading state on button
+            const submitBtn = this.querySelector('.submit-btn');
+            const btnText = submitBtn.querySelector('.btn-text');
+            const originalText = btnText.textContent;
+            
+            btnText.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            // Form will be submitted normally to Web3Forms
+            // This is just for UI feedback
+            setTimeout(() => {
+                btnText.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
             
             // Remove error class on input
             const formInputs = contactForm.querySelectorAll('input, textarea, select');

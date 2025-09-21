@@ -158,6 +158,7 @@
 /* Featured Clients Section */
 /* Featured Clients Section - Complete Revision */
 .featured-clients {
+    margin-top: 20px;
     padding: 100px 0;
     background-color: var(--light-color);
 }
