@@ -6,6 +6,32 @@ AOS.init({
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Check if product name is passed in URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const productName = urlParams.get('product');
+    
+    if (productName) {
+        // Pre-fill the message field with product inquiry
+        const messageField = document.getElementById('message');
+        if (messageField) {
+            messageField.value = `I am interested in "${productName}". Please provide more information about pricing and availability.`;
+        }
+        
+        // Pre-select "Product Information" in inquiry type
+        const inquiryField = document.getElementById('inquiry');
+        if (inquiryField) {
+            inquiryField.value = 'product';
+        }
+        
+        // Smooth scroll to form after a brief delay
+        setTimeout(() => {
+            const formSection = document.querySelector('.contact-main');
+            if (formSection) {
+                formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }, 500);
+    }
+    
     // Form submission handling
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
