@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products - Professional Kitchen ventilation</title>
+    
+    <!-- Page Loader CSS - Load First -->
+    <link rel="stylesheet" href="page-loader.css">
+    
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="products.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Page Loader Script - Load in Head -->
+    <script src="page-loader-simple.js"></script>
 </head>
-<body>
+<body class="loading">
+    <!-- Page Loader -->
+    <div id="pageLoader" class="page-loader">
+        <div class="loader-logo-wrapper">
+            <img src="https://github.com/Tharun-05/gilli_assets/blob/main/Images/gilli%20logo.webp?raw=true" 
+                 alt="Gilli Solutions" 
+                 class="loader-logo">
+            <div class="loader-spinner">
+                <div class="spinner-dot"></div>
+                <div class="spinner-dot"></div>
+                <div class="spinner-dot"></div>
+            </div>
+            <p class="loader-text">Loading...</p>
+        </div>
+    </div>
+    
      <!-- Header -->
     <header>
         <nav>
@@ -33,7 +55,7 @@
                                 <i class="fas fa-chevron-down mobile-arrow"></i>
                             </a>
                             <div class="dropdown-content">
-                                <a href="#Commercial_Kitchen_Ventilation_Systems">Commercial Kitchen Ventilation Systems</a>
+                               <a href="#Commercial_Kitchen_Ventilation_Systems">Commercial Kitchen Ventilation Systems</a>
                                 <a href="#Commercial_Kitchen_Ventilation_&_HVAC_Accessories">Commercial Kitchen Ventilation & HVAC Accessories</a>
                                 <!-- <a href="#preparation">Food Preparation</a> -->
                                 <!-- <a href="#washing">Washing Equipment</a> -->
