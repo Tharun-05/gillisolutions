@@ -7,7 +7,7 @@ const products = [
         category: "Commercial_Kitchen_Ventilation_Systems",
         description: "A commercial kitchen hood is a ventilation device designed to remove heat, smoke, grease-laden vapors, and odors from the cooking area in commercial kitchens.",
         image: "https://www.commercial-kitchenequipments.com/photo/ps1831771-eh_115_silver_commercial_stainless_steel_exhaust_hood_with_filter_for_kitchen.jpg",
-        price: "$2,999",
+        // price: "Rs 2,49,900",
         longDescription: "Commercial kitchen hoods are an essential component of any professional kitchen ventilation system. They capture and remove smoke, steam, grease particles, and unwanted odors generated during cooking. Constructed from durable stainless steel, they are designed for high-performance air extraction and long-term use in demanding foodservice environments. Most hoods are equipped with easy-to-clean baffle filters, integrated lighting for better visibility, and are available in various sizes and airflow capacities to suit different kitchen layouts. Proper installation of a commercial kitchen hood ensures compliance with fire safety and hygiene regulations while improving indoor air quality and comfort for kitchen staff.",
         specifications: [
             "Type:Wall-mounted, island, or low-profile hoods",
@@ -30,7 +30,7 @@ const products = [
         category: "Commercial_Kitchen_Ventilation_Systems",
         description: "Commercial exhaust ducting is a network of ducts used to transport contaminated air, smoke, grease-laden vapors, and odors from kitchen hoods to the exterior of the building.",
         image: "https://tse3.mm.bing.net/th/id/OIP.jgY9wKBCvUyR602Hfzej1gHaEK?rs=1&pid=ImgDetMain&o=7&rm=3",
-        price: "$1,499",
+        // price: "Rs 1,24,900",
         longDescription: "Commercial exhaust ducting is an integral part of professional kitchen ventilation systems, connecting kitchen hoods to exhaust fans while safely removing smoke, heat, and airborne grease. Constructed from heavy-duty galvanized or stainless steel, these ducts are designed to withstand high temperatures and corrosive kitchen environments. They are sealed and insulated to prevent leaks and meet strict fire safety regulations, including NFPA 96 standards. Properly designed and installed exhaust ducting ensures efficient airflow, minimizes fire hazards, and contributes to a cleaner and safer kitchen environment.",
         specifications: [
             "Material: Galvanized steel, stainless steel (16–20 gauge)",
@@ -53,7 +53,7 @@ const products = [
         category: "Commercial_Kitchen_Ventilation_Systems",
         description: "They provide the necessary airflow to exhaust contaminated air, smoke, and grease vapors from hoods and ducts, ensuring a clean and safe kitchen environment.",
         image: "https://img-new.cgtrader.com/items/943730/28829c9894/large/industrial-centrifugal-blower-fan-animated-3d-model-animated-max-obj-fbx-3dm-mtl.jpg",
-        price: "$1,499",
+        // price: "Rs 1,24,900",
         longDescription: "Centrifugal blowers are critical components in commercial kitchen exhaust systems, delivering powerful airflow to remove heat, smoke, and airborne grease particles. Their forward-curved or backward-inclined blades provide high efficiency and quiet operation, even in demanding ventilation setups. These blowers are available in various configurations, including direct-drive and belt-drive, to suit different kitchen sizes and duct layouts. Designed with durable materials and corrosion-resistant finishes, centrifugal blowers ensure long-term reliability and compliance with commercial kitchen ventilation standards. Their high static pressure capacity makes them ideal for systems with extended ductwork and heavy-duty ventilation needs.",
         specifications: [
             "Type: Single inlet or double inlet centrifugal blower",
@@ -77,7 +77,7 @@ const products = [
         category: "Commercial_Kitchen_Ventilation_Systems",
         description: "Designed to trap grease, smoke, and airborne particles generated during cooking.",
         image: "https://m.media-amazon.com/images/I/510ggsd2CkL._AC_SL1500_.jpg",
-        price: "$1,499",
+        // price: "Rs 12,490",
         longDescription: "Commercial hood filters play a vital role in kitchen ventilation systems by capturing grease-laden vapors before they enter the exhaust ducts. Stainless steel baffle filters are widely used for their superior durability, fire safety compliance, and ease of cleaning. Their angled baffle design allows efficient grease separation while maintaining airflow performance. These filters are NSF-approved, making them safe for foodservice applications, and are fully dishwasher-safe for quick maintenance. By using high-quality hood filters, commercial kitchens can significantly reduce fire risks, extend the life of exhaust ducting and fans, and ensure regulatory compliance with ventilation safety standards.",
         specifications: [
             "Type: Baffle filters or mesh filters (preferred: stainless steel baffle)",
@@ -100,7 +100,7 @@ const products = [
         category: "Commercial_Kitchen_Ventilation_Systems",
         description: "They help balance air distribution, improve energy efficiency, and maintain proper ventilation pressure.",
         image: "https://airmasteremirates.com/wp-content/uploads/2016/02/GI-Volume-Control-Damper-1.jpg",
-        price: "$1,499",
+        // price: "Rs 24,900",
         longDescription: "Ducting dampers are crucial for maintaining airflow control and efficiency in commercial kitchen ventilation systems. They allow precise adjustment of exhaust and supply air, helping maintain balanced pressure within the kitchen. Motorized dampers can be integrated with building automation systems for automatic operation, while manual dampers provide simple and cost-effective control. Backdraft dampers are used to prevent reverse airflow when the system is off. Constructed from heavy-duty galvanized or stainless steel, these dampers are durable, fire-code compliant, and designed for continuous operation in demanding kitchen environments. Proper damper use ensures improved indoor air quality, energy efficiency, and compliance with ventilation safety standards.",
         specifications: [
             "Type: Manual, motorized (automatic), or backdraft dampers",
@@ -123,7 +123,7 @@ const products = [
         category: "Commercial_Kitchen_Ventilation_Systems",
         description: "They help maintain a quieter kitchen environment while ensuring efficient airflow.",
         image: "https://www.mdpi.com/applsci/applsci-13-04426/article_deploy/html/images/applsci-13-04426-g005-550.jpg",
-        price: "$1,499",
+        // price: "Rs 49,900",
         longDescription: "Silencers for blowers are essential components in commercial kitchen ventilation systems where noise control is a priority. They are designed to absorb and attenuate the sound produced by exhaust and makeup air blowers, reducing the noise transmitted through ducts. Constructed from heavy-duty galvanized or stainless steel with internal acoustic insulation, these silencers maintain high airflow performance without causing significant pressure drops. They are available in various sizes and configurations to suit different ventilation designs. By installing silencers, commercial kitchens can create a more comfortable working environment, comply with noise control regulations, and maintain optimal ventilation efficiency.",
         specifications: [
             "Type: Rectangular or cylindrical duct silencers",
@@ -147,7 +147,7 @@ const products = [
         category: "Commercial_Kitchen_Ventilation_&_HVAC_Accessories",
         description: "They help secure air distribution components and ensure airtight connections for efficient airflow in fresh air supply systems.",
         image: "https://tse1.mm.bing.net/th/id/OIP.TANRma-tuKETlCmsosk23AHaG1?rs=1&pid=ImgDetMain&o=7&rm=3",
-        price: "$1,499",
+        // price: "Rs 7,490",
         longDescription: "Collars used in fresh air systems serve as connection interfaces between ducts, diffusers, and plenums in commercial ventilation setups. They ensure secure and leak-proof transitions, improving the efficiency of air delivery. Available in both round and rectangular shapes, these collars are typically manufactured from galvanized or stainless steel for durability and resistance to corrosion. Many models include gaskets or pre-applied sealants for airtight performance. By using properly sized collars, fresh air systems achieve better airflow distribution, reduced energy loss, and compliance with ventilation standards.",
         specifications: [
             "Type: Round or rectangular duct collars",
@@ -166,6 +166,9 @@ const products = [
     }
     // Add more products as needed
 ];
+
+// Make products available globally for product navigation
+window.products = products;
 
 // Function to get product ID from URL
 function getProductIdFromUrl() {
@@ -256,8 +259,7 @@ function loadProducts(category = null) {
                 <div class="product-info">
                     <h3>${product.name}</h3>
                     <p>${product.description}</p>
-                    <span class="price">${product.price}</span>
-                    <button onclick="inquireProduct(${product.id})">Inquire Now</button>
+                    <button onclick="window.location.href='product-detail.html?id=${product.id}'">Details</button>
                 </div>
             </div>`
         ).join('');
