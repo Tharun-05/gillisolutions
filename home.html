@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Kitchen Ventilation</title>
+    
+    <!-- Page Loader CSS - Load First -->
+    <link rel="stylesheet" href="page-loader.css">
+    
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="contact.css"> 
@@ -22,11 +26,28 @@
     <!-- Swiper JS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Page Loader Script - Load in Head -->
+    <script src="page-loader-simple.js"></script>
 </head>
-<body>
+<body class="loading">
+    <!-- Page Loader -->
+    <div id="pageLoader" class="page-loader">
+        <div class="loader-logo-wrapper">
+            <img src="https://github.com/Tharun-05/gilli_assets/blob/main/Images/gilli%20logo.webp?raw=true" 
+                 alt="Gilli Solutions" 
+                 class="loader-logo">
+            <div class="loader-spinner">
+                <div class="spinner-dot"></div>
+                <div class="spinner-dot"></div>
+                <div class="spinner-dot"></div>
+            </div>
+            <p class="loader-text">Loading...</p>
+        </div>
+    </div>
+    
     <!-- Header -->
     <header>
-        
         <nav>
             <div class="logo">
                 <img src="https://github.com/Tharun-05/gilli_assets/blob/main/Images/gilli%20logo.webp?raw=true" alt="Company Logo">
@@ -55,6 +76,7 @@
                                 <a id="showAllProductsBtn">Show All Products</a>
                             </div>
                         </li>
+
                         <li>
                             <a href="services.html" class="nav-icon" data-tooltip="Services">
                                 <i class="fas fa-cogs"></i>
@@ -83,18 +105,15 @@
                 </div>
             <i class="fas fa-bars" onclick="showMenu()"></i>
         </nav>
-        <!-- <div class="safety-banner">
-            <p>Our products are designed with chefs' safety in mind. Quality and safety for professional kitchens.</p>
-        </div> -->
     </header>
 
     <!-- Hero Section -->
     <!-- Hero Section with Carousel -->
     <section class="hero" id="home">
         <div class="carousel-container">
-            <div class="carousel-slide">
-                 <video controls autoplay muted loop>
-                    <source src="./Images/Entry video.mp4" type="video/mp4">
+            <div class="carousel-slide" id="video-slide">
+                <video id="carouselVideo" autoplay muted playsinline>
+                    <source src="https://github.com/Tharun-05/gilli_assets/raw/refs/heads/main/gilli_assets-main/videos/Entry_video2.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <div class="slide-content">
@@ -103,14 +122,14 @@
                 </div>
             </div>
             <div class="carousel-slide">
-                <img src="./Images/Entry-slide2.jpeg" alt="Kitchen Equipment 2">
+                <img src="https://github.com/Tharun-05/gilli_assets/blob/main/Images/Entry-slide2.jpeg?raw=true" alt="Kitchen Equipment 2">
                 <div class="slide-content">
                     <h1>Commercial Kitchen Setup</h1>
                     <p>Your One-Stop Kitchen Partner — Complete Solutions from Layout to Launch..</p>
                 </div>
             </div>
             <div class="carousel-slide">
-                <img src="./Images/Entry-slide3.JPG" alt="Kitchen Equipment 3">
+                <img src="https://github.com/Tharun-05/gilli_assets/blob/main/Images/Entry-slide3.JPG?raw=true" alt="Kitchen Equipment 3">
                 <div class="slide-content">
                     <h1>Built for Chefs, Designed for Environment</h1>
                     <p>Engineered for Efficiency. Committed to Clean Air.</p>
@@ -134,7 +153,7 @@
         <h2 class="section-header">Our Commitment to Excellence</h2>
         <div class="featured-container">
             <div class="featured-image">
-                <img src="./Images/IMG_5299.JPG" alt="Professional Kitchen Equipment">
+                <img src="https://github.com/Tharun-05/gilli_assets/blob/main/Images/IMG_5299.JPG?raw=true" alt="Professional Kitchen Equipment">
             </div>
             <div class="featured-content">
                 <h3>Quality Kitchen Solutions</h3>
@@ -320,10 +339,10 @@
                 <div class="footer-column">
                     <h3>Products</h3>
                     <ul class="footer-links">
-                        <li><a href="Products.html#cooking">Cooking Equipment</a></li>
-                        <li><a href="Products.html#refrigeration">Refrigeration</a></li>
-                        <li><a href="Products.html#preparation">Food Preparation</a></li>
-                        <li><a href="Products.html#washing">Washing Equipment</a></li>
+                        <li><a href="Products.html#Commercial_Kitchen_Ventilation_Systems">Commercial Kitchen Ventilation Systems</a></li>
+                        <li><a href="Products.html#Commercial_Kitchen_Ventilation_&_HVAC_Accessories">Commercial Kitchen Ventilation & HVAC Accessories</a></li>
+                        <!-- <li><a href="Products.html#preparation">Food Preparation</a></li>
+                        <li><a href="Products.html#washing">Washing Equipment</a></li> -->
                     </ul>
                 </div>
                 
@@ -357,7 +376,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Professional Kitchen Equipment. All rights reserved.</p>
+                <p>&copy; 2025 Gilli Solutions. All rights reserved.</p>
             </div>
         </div>
     </footer>

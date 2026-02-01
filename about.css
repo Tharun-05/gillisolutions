@@ -72,7 +72,7 @@
 
 /* Hero Section */
 .about-hero {
-    background-image:  url('./Images/our-story.jpeg');
+    background-image: url('https://raw.githubusercontent.com/Tharun-05/gilli_assets/main/Images/our-story.jpeg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -573,7 +573,7 @@
 
 .social-links {
     display: flex;
-    background-color: blue;
+    /* background-color: blue; */
     gap: 15px;
 }
 
