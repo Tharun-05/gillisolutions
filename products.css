@@ -165,7 +165,9 @@ section h2 {
 }
 
 .hero {
-    height: 100vh;
+    min-height: 65vh;
+    height: 85vh;
+    max-height: 95vh;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -176,6 +178,8 @@ section h2 {
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: hidden;
+    touch-action: pan-y;
 }
 
 .carousel-slide {
@@ -185,7 +189,8 @@ section h2 {
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transform: translateX(100%);
+    transition: transform 0.6s ease-in-out, opacity 0.5s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -193,6 +198,45 @@ section h2 {
 
 .carousel-slide.active {
     opacity: 1;
+    transform: translateX(0);
+}
+
+@media (max-width: 900px) {
+    .hero {
+        min-height: 50vh;
+        height: 55vh;
+        margin-top: 50px;
+    }
+
+    .slide-content {
+        padding: 0 16px;
+    }
+
+    .slide-content h1 {
+        font-size: clamp(1.8rem, 6vw, 2.4rem);
+    }
+
+    .slide-content p {
+        font-size: 1rem;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+    }
+
+    .carousel-btn.prev {
+        left: 10px;
+    }
+
+    .carousel-btn.next {
+        right: 10px;
+    }
+
+    .carousel-dots {
+        bottom: 12px;
+    }
 }
 
 .carousel-slide img {
