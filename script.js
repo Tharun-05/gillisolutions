@@ -595,6 +595,8 @@ document.addEventListener('DOMContentLoaded', function() {
         currentSlide: 0,
         interval: null,
         autoPlayDuration: 10000, // 5 seconds per slide
+        videoElement: null,
+        videoEndedListener: null,
 
         init() {
             // Create dots
@@ -602,6 +604,17 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Set first slide as active
             this.showSlide(0);
+            
+            // Bind video ended once
+            this.videoElement = this.container.querySelector('#video-slide video');
+            if (this.videoElement) {
+                this.videoEndedListener = () => {
+                    if (this.currentSlide === 0) {
+                        this.nextSlide();
+                    }
+                };
+                this.videoElement.addEventListener('ended', this.videoEndedListener);
+            }
             
             // Add event listeners
             this.prevBtn.addEventListener('click', () => this.prevSlide());
@@ -628,35 +641,29 @@ document.addEventListener('DOMContentLoaded', function() {
         },
 
         showSlide(index) {
-            // Remove active class from all slides and dots
-            this.slides.forEach(slide => {
-                slide.classList.remove('active');
+            const dots = this.dotsContainer.querySelectorAll('.dot');
 
-                // Pause and reset any videos in all slides
+            this.slides.forEach((slide, idx) => {
+                slide.classList.toggle('active', idx === index);
+                const offset = idx - index;
+                slide.style.transform = `translateX(${offset * 100}%)`;
+                slide.style.opacity = idx === index ? '1' : '0';
+                slide.style.zIndex = idx === index ? '2' : '1';
+                slide.style.pointerEvents = idx === index ? 'auto' : 'none';
+
                 const video = slide.querySelector('video');
                 if (video) {
                     video.pause();
                     video.currentTime = 0;
                 }
             });
-            
-            const videoSlide = document.querySelector('#video-slide video');
-            if (videoSlide) {
-                videoSlide.addEventListener('ended', () => {
-                    carousel.nextSlide();
-                });
-            }
 
-            const dots = this.dotsContainer.querySelectorAll('.dot');
             dots.forEach(dot => dot.classList.remove('active'));
 
-            // Add active class to current slide and dot
             this.currentSlide = index;
-            const currentSlideElement = this.slides[index];
-            currentSlideElement.classList.add('active');
             dots[index].classList.add('active');
 
-            // Play video if present in the current slide
+            const currentSlideElement = this.slides[index];
             const activeVideo = currentSlideElement.querySelector('video');
             if (activeVideo) {
                 activeVideo.play();

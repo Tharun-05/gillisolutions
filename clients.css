@@ -173,8 +173,8 @@
 
 .client-logos {
     display: flex;
-    animation: scroll 25s linear infinite;
-    width: calc(150px * 16); /* Double the total width of all logos */
+    animation: scroll 30s linear infinite;
+    width: max-content; /* Double the total width of all logos */
 }
 
 @keyframes scroll {
@@ -552,6 +552,36 @@
     opacity: 0.8;
 }
 
+/* More Projects CTA */
+.more-projects-cta {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 50px 30px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #f8f9fa, #ffffff);
+    border: 2px dashed #dcdcdc;
+    border-radius: 15px;
+}
+
+.more-projects-cta h3 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.more-projects-cta p {
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 25px;
+    line-height: 1.6;
+}
+
+.more-projects-cta .btn-primary {
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+}
+
 /* CTA Section */
 .cta-section {
     padding: 80px 0;
@@ -646,4 +676,41 @@
 .lb-data .lb-details {
     width: 100%;
     text-align: center;
+}
+
+/* Make lightbox backdrop clickable to close */
+.lb-outerContainer {
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.lb-container {
+    cursor: default;
+}
+
+.lb-outerContainer.lb-active {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* Close button styling */
+.lb-close {
+    cursor: pointer;
+    background-position: 0 0;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.lb-close:hover {
+    opacity: 1;
+}
+
+/* Navigation buttons */
+.lb-prev, .lb-next {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.lb-prev:hover, .lb-next:hover {
+    opacity: 1;
 }
