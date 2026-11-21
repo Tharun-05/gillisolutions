@@ -1,0 +1,54 @@
+---
+title: Products | Kitchen Hoods, Ducting, Blowers & Filters | Gilli Solutions
+description: Stainless steel kitchen hoods, baffle filters, G.I. ducting, centrifugal blowers, dampers, silencers and fresh-air collars — fabricated to order in Bengaluru.
+nav: products
+scripts: products, hero
+---
+<main id="main">
+  <header class="fx-hero" data-fx="smoke">
+    <div class="wrap">
+      <p class="fx-eyebrow">Products</p>
+      <h1>Built to <span class="fx-accent">swallow smoke.</span></h1>
+      <p class="lede">Every part of a commercial kitchen exhaust system, fabricated to order in our Peenya factory.</p>
+      <div class="btn-row">
+        <a class="btn btn--gold" href="#catalog">Browse products</a>
+        <a class="btn btn--outline-light" href="index.html#estimate">Estimate your airflow</a>
+      </div>
+      <p class="fx-hint"><span class="dot" aria-hidden="true"></span><span class="on-hover">Your cursor is an exhaust hood — sweep it through the smoke.</span><span class="on-touch">Touch the smoke — your finger is an exhaust hood.</span> <span class="fx-count">Captured <b data-fx-count>0.00</b> m³</span></p>
+    </div>
+  </header>
+
+  <section class="section" id="catalog">
+    <div class="wrap">
+      <div class="toolbar">
+        <div class="chips" role="group" aria-label="Filter by category">
+          <button class="chip" type="button" data-cat="all" aria-pressed="true">All</button>
+          <button class="chip" type="button" data-cat="exhaust" aria-pressed="false">Exhaust systems</button>
+          <button class="chip" type="button" data-cat="freshair" aria-pressed="false">Fresh air &amp; accessories</button>
+        </div>
+        <div class="search">
+          {{icon:search}}
+          <label class="sr-only" for="product-search">Search products</label>
+          <input id="product-search" type="search" placeholder="Search, e.g. blower, 20 gauge, noise">
+        </div>
+      </div>
+      <p class="sr-only" id="product-count" aria-live="polite"></p>
+      <ul class="product-grid" id="product-grid" aria-label="Products">
+        <li class="empty"><p>Loading products…</p><noscript><p>Please enable JavaScript to browse products, or call {{phone0}}.</p></noscript></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <div>
+        <h2>Need a complete system?</h2>
+        <p>We size the hood, filters, duct and blower together so they work as one.</p>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn--light" href="contact.html#enquiry">Request a site visit</a>
+        <a class="btn btn--outline-light" href="{{wa_quote}}" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>

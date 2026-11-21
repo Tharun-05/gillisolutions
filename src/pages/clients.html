@@ -1,0 +1,40 @@
+---
+title: Projects & Clients | Gilli Solutions Kitchen Ventilation
+description: Kitchen exhaust systems by Gilli Solutions for Akshaya Patra, ISRO, PES University, Hrudaya Hospital, The Tipsy Bull and many more across India.
+nav: clients
+scripts: atlas, hero
+---
+<main id="main">
+  {{reach_map}}
+  {{projects_head}}
+
+  <section class="section" id="gallery" aria-labelledby="gallery-title">
+    <div class="wrap">
+      <div class="section-head section-head--split">
+        <h2 id="gallery-title">Recent work</h2>
+        <p class="lede">Tap any photo to see it larger.</p>
+      </div>
+      {{projects_gallery}}
+    </div>
+  </section>
+
+  <section class="section section--steel" aria-labelledby="logos-title">
+    <div class="wrap">
+      <div class="section-head"><h2 id="logos-title">Some of the organisations we work with</h2></div>
+      {{logo_wall}}
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <div>
+        <h2>Your kitchen could be next.</h2>
+        <p>Tell us what you're building and we'll arrange a site survey.</p>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn--light" href="contact.html#enquiry">Request a site visit</a>
+        <a class="btn btn--outline-light" href="tel:{{phone0_href}}">Call {{phone0}}</a>
+      </div>
+    </div>
+  </section>
+</main>

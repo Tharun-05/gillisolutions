@@ -1,0 +1,165 @@
+---
+title: Gilli Solutions | Commercial Kitchen Exhaust Systems, Bengaluru
+description: Hoods, ducting, blowers, filters and fresh-air systems for commercial kitchens — designed, fabricated in Peenya and installed across India since 2013. Estimate your airflow online.
+nav: home
+ld: business
+scripts: estimator, intro
+intro: yes
+---
+<div class="intro" id="intro" aria-hidden="true">
+  <video class="intro__video" muted playsinline preload="none">
+    <source src="{{intro_video}}" type="video/mp4">
+  </video>
+  <div class="intro__bar"><span></span></div>
+  <button class="intro__skip" type="button" tabindex="-1">Skip intro</button>
+</div>
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__media">
+      <video autoplay muted loop playsinline preload="metadata" poster="{{hero_poster}}" aria-hidden="true">
+        <source src="{{hero_video}}" type="video/mp4">
+      </video>
+    </div>
+    <div class="wrap">
+      <h1 id="hero-title">Clean air for busy kitchens.</h1>
+      <p>Hoods, ducting, blowers and fresh-air systems — designed and fabricated in our Peenya factory and installed across India since {{founded}}.</p>
+      <div class="btn-row">
+        <a class="btn" href="#estimate">Estimate your airflow</a>
+        <a class="btn btn--outline-light" href="#contact">Request a site visit</a>
+      </div>
+      <ul class="hero__facts">
+        <li><strong>{{installations}}</strong>installations</li>
+        <li><strong>Since {{founded}}</strong>in Bengaluru</li>
+        <li><strong>{{certification}}</strong>certified</li>
+      </ul>
+    </div>
+    <button class="hero__pause" type="button" aria-label="Pause background video">{{icon:pause}}</button>
+  </section>
+
+  <section class="section section--ink" id="estimate" aria-labelledby="est-title">
+    <div class="wrap">
+      <div class="section-head section-head--split">
+        <h2 id="est-title">How much air does your kitchen need?</h2>
+        <p class="lede">Pick your kitchen and hood length. You'll get a first estimate of exhaust airflow, duct size, filters and blower — then send it to us for an exact design.</p>
+      </div>
+
+      <div class="estimator">
+        <form class="est-form" id="estimator">
+          <fieldset>
+            <legend>Kitchen type</legend>
+            <div class="seg">
+              <input type="radio" name="kitchen" id="k-cafe" value="cafe"><label for="k-cafe">Café / bakery</label>
+              <input type="radio" name="kitchen" id="k-inst" value="institutional"><label for="k-inst">Hostel / hospital</label>
+              <input type="radio" name="kitchen" id="k-rest" value="restaurant" checked><label for="k-rest">Restaurant</label>
+              <input type="radio" name="kitchen" id="k-si" value="southindian"><label for="k-si">Dosa tawa / fryers</label>
+              <input type="radio" name="kitchen" id="k-tan" value="tandoor"><label for="k-tan">Tandoor / grill / wok</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Cooking duty</legend>
+            <div class="seg">
+              <input type="radio" name="duty" id="d-l" value="light"><label for="d-l">Light</label>
+              <input type="radio" name="duty" id="d-m" value="medium" checked><label for="d-m">Medium</label>
+              <input type="radio" name="duty" id="d-h" value="heavy"><label for="d-h">Heavy</label>
+              <input type="radio" name="duty" id="d-x" value="extra"><label for="d-x">Extra-heavy</label>
+            </div>
+            <p class="est-hint">Set automatically from kitchen type — change it if your menu is heavier or lighter.</p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Hood style</legend>
+            <div class="seg">
+              <input type="radio" name="style" id="s-w" value="wall" checked><label for="s-w">Against a wall</label>
+              <input type="radio" name="style" id="s-i" value="island"><label for="s-i">Island (open on all sides)</label>
+            </div>
+          </fieldset>
+
+          <div>
+            <label class="est-label" for="hoodlen">Hood length</label>
+            <div class="range-row">
+              <input type="range" id="hoodlen" name="hoodlen" min="4" max="30" step="1" value="12" aria-describedby="len-hint">
+              <output for="hoodlen" data-out="length">12 ft</output>
+            </div>
+            <p class="est-hint" id="len-hint">Usually the length of your cooking line plus about 6 inches on each side.</p>
+          </div>
+        </form>
+
+        <div class="est-panel" aria-live="polite">
+          <div class="est-figure" id="est-figure"></div>
+          <div class="est-readout">
+            <div class="is-primary">
+              <span class="k">Exhaust airflow</span>
+              <span class="v" data-out="cfm">3,600<small>CFM</small></span>
+              <span class="k" data-out="m3h">6,116 m³/h</span>
+            </div>
+            <div><span class="k">Duct size</span><span class="v" data-out="duct">—</span></div>
+            <div><span class="k">Grease filters</span><span class="v" data-out="filters">—</span></div>
+            <div><span class="k">Fresh air (make-up)</span><span class="v" data-out="makeup">—</span></div>
+            <div><span class="k">Blower motor</span><span class="v" data-out="motor">—</span></div>
+          </div>
+          <div class="est-foot">
+            <div class="btn-row">
+              <button class="btn btn--light" type="button" id="est-send">Send this estimate to us</button>
+              <button class="btn btn--outline-light" type="button" data-ask="Can you explain my airflow estimate and what system I need?">Ask about it</button>
+            </div>
+            <p>A planning estimate using typical canopy-hood airflow rates. Our engineers confirm the final design after a site visit — duct route, bends and building height all change the blower you need.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--steel" aria-labelledby="path-title">
+    <div class="wrap">
+      <div class="section-head section-head--split">
+        <h2 id="path-title">One factory, the whole exhaust line.</h2>
+        <p class="lede">We make every part air passes through, so each piece is sized for the next. Follow the air from the stove to the roof.</p>
+      </div>
+      <ol class="path">
+        <li><a href="product-detail.html?id=1"><h3>Hood</h3><p>Captures smoke and heat over the cooking line.</p></a></li>
+        <li><a href="product-detail.html?id=4"><h3>Baffle filters</h3><p>Strip grease out before it reaches the duct.</p></a></li>
+        <li><a href="product-detail.html?id=2"><h3>Ducting</h3><p>Carries the air safely through the building.</p></a></li>
+        <li><a href="product-detail.html?id=5"><h3>Dampers</h3><p>Balance the airflow and stop backdraught.</p></a></li>
+        <li><a href="product-detail.html?id=3"><h3>Blower</h3><p>Pulls the whole system at the right pressure.</p></a></li>
+        <li><a href="product-detail.html?id=6"><h3>Silencer</h3><p>Keeps the noise down outside and in.</p></a></li>
+      </ol>
+      <div class="path-note">
+        <p><strong>And the air coming back in:</strong> fresh-air collars, grilles and dampers replace what the hood removes, so the kitchen doesn't go stuffy or pull smoke back.</p>
+        <a href="product-detail.html?id=7">Fresh-air products</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="clients-title">
+    <div class="wrap">
+      <div class="section-head section-head--split">
+        <h2 id="clients-title">Running in kitchens you know.</h2>
+        <p class="lede">Restaurants, hotels, hospitals, schools and institutions across India — from neighbourhood tiffin rooms to Akshaya Patra's bulk kitchens.</p>
+      </div>
+    </div>
+    {{clients_marquee}}
+    <div class="wrap" style="margin-top:3.5rem">
+      {{projects_preview}}
+      <p class="btn-row" style="margin-top:1.5rem"><a class="btn btn--ghost" href="clients.html">See all projects</a> {{map_link_button}}</p>
+    </div>
+  </section>
+
+  <section class="section section--steel" aria-labelledby="factory-title">
+    <div class="wrap split">
+      <div class="split__media"><img src="{{img_factory}}" alt="Stainless steel kitchen exhaust hood fabricated by Gilli Solutions" loading="lazy"></div>
+      <div>
+        <h2 id="factory-title">Made in Peenya, fitted by the people who made it.</h2>
+        <p class="lede">Every hood and duct is cut, folded and welded to order in our own workshop — then installed by our own team.</p>
+        <ul class="fact-list">
+          <li>{{icon:check}}<span>Built to your cooking line, not a catalogue size</span></li>
+          <li>{{icon:check}}<span>Stainless steel hoods and filters, G.I. or stainless ducting</span></li>
+          <li>{{icon:check}}<span>One team from site survey to commissioning — and after</span></li>
+        </ul>
+        <a class="btn" href="about.html">About the company</a>
+      </div>
+    </div>
+  </section>
+
+  {{contact_section}}
+</main>

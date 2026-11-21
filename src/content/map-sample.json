@@ -1,0 +1,20 @@
+{
+  "_readme": "SAMPLE locations for map-preview.html only. Not real data. Real locations are entered per project in the admin page (src/content/projects.json).",
+  "projects": [
+    {"name": "Anna Vilas, Kochi", "city": "Kochi", "type": "restaurant", "products": ["kitchen-hoods", "hood-filters", "exhaust-ducting", "centrifugal-blowers"]},
+    {"name": "PES University, Bengaluru", "city": "Bengaluru", "area": "Banashankari", "type": "institution", "products": ["kitchen-hoods", "exhaust-ducting", "centrifugal-blowers", "fresh-air-collars"]},
+    {"name": "Raichur Institute", "city": "Raichur", "type": "institution", "products": ["kitchen-hoods", "exhaust-ducting"]},
+    {"name": "Raichur Institute of Medical Sciences", "city": "Raichur", "type": "hospital", "products": ["kitchen-hoods", "hood-filters", "centrifugal-blowers"]},
+    {"name": "HSR Club", "city": "Bengaluru", "area": "HSR Layout", "type": "club", "products": ["kitchen-hoods", "hood-filters", "exhaust-ducting", "centrifugal-blowers"]},
+    {"name": "BTM Club", "city": "Bengaluru", "area": "BTM Layout", "type": "club", "products": ["kitchen-hoods", "exhaust-ducting"]},
+    {"name": "The Tipsy Bull", "city": "Bengaluru", "area": "Koramangala", "type": "restaurant", "map_link": true, "products": ["kitchen-hoods", "silencers", "centrifugal-blowers"]},
+    {"name": "Akshaya Patra", "city": "Bengaluru", "area": "Rajajinagar", "type": "industrial", "products": ["kitchen-hoods", "exhaust-ducting", "centrifugal-blowers", "dampers"]},
+    {"name": "Hrudaya", "city": "Bengaluru", "area": "Whitefield", "type": "hospital", "products": ["kitchen-hoods", "hood-filters"]},
+    {"name": "The Filter Coffee", "city": "Bengaluru", "area": "Indiranagar", "type": "restaurant", "map_link": true, "products": ["kitchen-hoods", "hood-filters"]},
+    {"name": "Kailasam Veg", "city": "Hosur", "type": "restaurant", "products": ["kitchen-hoods", "exhaust-ducting"]},
+    {"name": "Udupi Adithya", "city": "Udupi", "type": "restaurant", "products": ["kitchen-hoods", "hood-filters"]},
+    {"name": "Holiday Valley", "city": "Mysuru", "type": "hotel", "products": ["kitchen-hoods", "exhaust-ducting", "centrifugal-blowers", "fresh-air-collars"]},
+    {"name": "Anjappar", "city": "Chennai", "type": "restaurant", "products": ["kitchen-hoods", "centrifugal-blowers"]},
+    {"name": "Legacy School", "city": "Bengaluru", "area": "Yelahanka", "type": "institution", "products": ["kitchen-hoods", "exhaust-ducting"]}
+  ]
+}

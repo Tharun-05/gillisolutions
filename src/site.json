@@ -1,0 +1,75 @@
+{
+  "_readme": "Edit this file, then run: python tools/build.py  — values marked CONFIRM conflicted on the old site.",
+  "name": "Gilli Solutions",
+  "tagline": "Living clean",
+  "founded": 2013,
+  "phones": [
+    "+91 94825 62738",
+    "+91 96116 55968"
+  ],
+  "phoneHref": [
+    "+919482562738",
+    "+919611655968"
+  ],
+  "whatsapp": "919482562738",
+  "_whatsapp": "CONFIRM: assumed the first number is on WhatsApp",
+  "email": "gillisolutions@gmail.com",
+  "address": "#89, Duggalama Temple, Peenya Industrial Area, 3rd Phase, Bengaluru 560058",
+  "mapsLink": "https://maps.google.com/?q=Gilli+Solutions+Peenya+Bengaluru",
+  "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.20610551959!2d77.51519147829386!3d13.02254315454502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3da19897ff6f%3A0xd7972018d66bc29a!2sGilli%20Solutions!5e0!3m2!1sen!2sin!4v1749364760204!5m2!1sen!2sin",
+  "_hours": "CONFIRM: home page said Mon–Sat 9–5, contact page said Mon–Fri 9–5 and Sat 10–2",
+  "hours": [
+    [
+      "Monday – Friday",
+      "9:00 am – 5:00 pm"
+    ],
+    [
+      "Saturday",
+      "10:00 am – 2:00 pm"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "_installations": "CONFIRM: old pages said 250+, 425 and 500 in different places",
+  "installations": "250+",
+  "certification": "ISO 9001:2015",
+  "_warranty": "CONFIRM: old pages said 90 days, 1 year and 2 years",
+  "warranty": "1-year warranty against manufacturing defects",
+  "web3formsKey": "d0ecfb13-6c7b-43b0-93b4-283300583cf0",
+  "_aiEndpoint": "Optional. Deploy worker/ai-proxy.js and paste its URL. Never put an API key here.",
+  "aiEndpoint": "",
+  "social": {
+    "facebook": "",
+    "instagram": "",
+    "linkedin": "",
+    "youtube": ""
+  },
+  "logo": "https://ik.imagekit.io/Gilli/Gilli_asserts/Images/gilli%20logo.webp?updatedAt=1773500099355",
+  "media": {
+    "heroVideo": "https://ik.imagekit.io/Gilli/Gilli_asserts/Images/Entry%20video1.mp4?updatedAt=1773500137176",
+    "heroPoster": "https://ik.imagekit.io/Gilli/Gilli_asserts/Images/Entry-slide2.jpeg?updatedAt=1773500098725&tr=w-1600,q-70",
+    "factory": "https://ik.imagekit.io/Gilli/Gilli_asserts/Images/IMG_5299.JPG?updatedAt=1773500106737&tr=w-1200,q-75",
+    "facility": "https://ik.imagekit.io/Gilli/Gilli_asserts/Images/IMG_5310.JPG?updatedAt=1773500110501&tr=w-1200,q-75",
+    "kitchen": "https://ik.imagekit.io/Gilli/Gilli_asserts/Images/Entry-slide3.JPG?updatedAt=1773500107508&tr=w-1600,q-70",
+    "introVideo": "https://ik.imagekit.io/Gilli/Gilli_asserts/Images/logo-video.mp4?updatedAt=1773500107372"
+  },
+  "team": [
+    {
+      "name": "Pramod Kumar M",
+      "qual": "MBA, M.Com",
+      "role": "Proprietor",
+      "bio": "Twelve-plus years in the industry. Pramod sets the direction of the company and works closely with clients on large projects.",
+      "photo": "https://ik.imagekit.io/Gilli/Gilli_asserts/Images/Proprietor.jpeg?updatedAt=1773500101768&tr=w-600,q-75"
+    },
+    {
+      "name": "Vinay H",
+      "qual": "MBA",
+      "role": "Chief Operations Officer",
+      "bio": "Vinay runs day-to-day operations, from fabrication on the factory floor to installation on site.",
+      "photo": "https://ik.imagekit.io/Gilli/Gilli_asserts/Images/Coo.jpeg?updatedAt=1773500103540&tr=w-600,q-75"
+    }
+  ],
+  "_content": "Client logos and project photos live in src/content/*.json — edit them at /admin/."
+}
