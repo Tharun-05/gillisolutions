@@ -1,0 +1,3 @@
+# Cloudflare Pages redirects (replaces the redirect lines in .htaccess)
+/home.html      /               301
+/Products.html  /products.html  301
